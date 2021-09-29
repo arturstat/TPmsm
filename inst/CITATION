@@ -1,0 +1,20 @@
+citHeader("To cite TPmsm in publications use:")
+
+citEntry(entry = "Article",
+  title        = "{TPmsm}: Estimation of the Transition Probabilities in 3-State Models",
+  author       = personList(as.person("Artur Ara{\\'u}jo"),
+                   as.person("Lu{\\'\\i}s Meira-Machado"),
+                   as.person("Javier Roca-Pardi{\\~n}as")),
+  journal      = "Journal of Statistical Software",
+  year         = "2014",
+  volume       = "62",
+  number       = "4",
+  pages        = "1--29",
+  url          = "https://www.jstatsoft.org/v62/i04/",
+
+  textVersion  =
+  paste("Artur Araujo, Luis Meira-Machado, Javier Roca-Pardinas (2014).",
+        "TPmsm: Estimation of the Transition Probabilities in 3-State Models.",
+        "Journal of Statistical Software, 62(4), 1-29.",
+        "URL https://www.jstatsoft.org/v62/i04/.")
+)
