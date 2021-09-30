@@ -6,6 +6,5 @@ Estimation of Transition Probabilities in Multistate Models
 ## Funding
 This research was financed by FEDER Funds through ``Programa
 Operacional Factores de Competitividade -- COMPETE'' and by Portuguese
-Funds through FCT -- ``Funda{\c c}{\~ a}o para a Ci{\^ e}ncia e a
-Tecnologia'', in the form of grants PTDC/MAT/104879/2008 and
-\linebreak PEst-OE/MAT/UI0013/2014.
+Funds through FCT -- ``Fundação para a Ciência e a Tecnologia'',
+in the form of grants PTDC/MAT/104879/2008 and PEst-OE/MAT/UI0013/2014.
