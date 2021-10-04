@@ -32,7 +32,7 @@ Suggests: knitr
 VignetteBuilder: knitr
 Description: Estimation of transition probabilities for the
 	illness-death model and or the three-state progressive model.
-License: GPL-3
+License: GPL-3 | file LICENSE
 URL: https://github.com/arturstat/TPmsm
 BugReports: https://github.com/arturstat/TPmsm/issues
 LazyLoad: yes
