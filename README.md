@@ -19,6 +19,9 @@ Allignol A., Schumacher M., Beyersmann J. (2011) Empirical Transition Matrix of 
 
 Amorim A. P., de Uña-Álvarez J., Meira Machado L. F. (2011) Presmoothing the transition probabilities in the illness-death model. *Statistics and Probability Letters* **81(7)**, 797--806. [doi:10.1016/j.spl.2011.02.017](https://doi.org/10.1016/j.spl.2011.02.017)
 
+Araújo A, Meira-Machado L, Roca-Pardiñas J (2014) TPmsm: Estimation of the Transition Probabilities in
+3-State Models. *Journal of Statistical Software*, **62(4)**, 1-29. [doi:10.18637/jss.v062.i04](https://doi.org/10.18637/jss.v062.i04)
+
 Crowley J., Hu M. (1977) Covariance analysis of heart transplant survival data. *Journal of the American Statistical Association* **72(357)**, 27--36. [doi:10.2307/2286902](https://doi.org/10.2307/2286902)
 
 Davison, A. C., Hinkley, D. V. (1997) *Bootstrap Methods and their Application* Chapter 5, Cambridge University Press.
