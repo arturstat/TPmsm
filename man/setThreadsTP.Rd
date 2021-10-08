@@ -27,11 +27,11 @@ without defining a new thread number.
 
 \references{
 Araújo A, Meira-Machado L, Roca-Pardiñas J (2014) TPmsm: Estimation of the Transition Probabilities in
-3-State Models. \emph{Journal of Statistical Software}, \bold{62(4)}, 1-29. \doi{10.18637/jss.v062.i04}
+3-State Models. \emph{Journal of Statistical Software}, \bold{62}(4), 1-29. \doi{10.18637/jss.v062.i04}
 
-OpenMP Architecture Review Board, OpenMP Application Program Interface Version 3.0, May 2008, p110. \url{https://www.openmp.org/mp-documents/spec30.pdf}
+OpenMP Architecture Review Board, OpenMP Application Program Interface Version 3.0, May 2008, p110. \url{https://www.openmp.org/wp-content/uploads/spec30.pdf}
 
-\dQuote{Runtime Library Routines}, Summary of OpenMP 3.0 C/C++ Syntax, p5. \url{https://www.openmp.org/mp-documents/OpenMP3.0-SummarySpec.pdf}
+\dQuote{Runtime Library Routines}, Summary of OpenMP 3.0 C/C++ Syntax, p5. \url{https://www.openmp.org/wp-content/uploads/OpenMP3.0-SummarySpec.pdf}
 }
 
 \author{Artur Araújo, Javier Roca-Pardiñas and Luís Meira-Machado}
