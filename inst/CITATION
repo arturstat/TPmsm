@@ -20,11 +20,7 @@ citEntry(
 	author      = author,
 	year        = year,
 	note        = vers,
-	url         = url,
-	textVersion = paste(
-    "Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas (", year, "). ",
-    title, ". ", vers, " URL ", url, sep=""
-  )
+	url         = url
 );
 
 citEntry(
@@ -36,8 +32,5 @@ citEntry(
   volume      = "62",
   number      = "4",
   pages       = "1--29",
-  doi         = "10.18637/jss.v062.i04",
-  textVersion = "Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas (2014).
-  “TPmsm: Estimation of the Transition Probabilities in 3-State Models.”
-  Journal of Statistical Software, 62(4), 1-29. doi:10.18637/jss.v062.i04"
+  doi         = "10.18637/jss.v062.i04"
 );
