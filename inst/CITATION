@@ -4,7 +4,7 @@ citHeader(
   paste("To cite the R package", PKG, "in publications use:")
 );
 
-title <- "Estimation of Transition Probabilities in Multistate Models";
+title <- "TPmsm: Estimation of Transition Probabilities in Multistate Models";
 author <- personList(
   as.person("Artur Ara{\\'u}jo"),
   as.person("Lu{\\'\\i}s Meira-Machado"),
