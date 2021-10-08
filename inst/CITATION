@@ -4,7 +4,7 @@ citHeader(
   paste("To cite the R package", PKG, "in publications use:")
 );
 
-title <- "TPmsm: Estimation of Transition Probabilities in Multistate Models";
+title <- "Estimation of Transition Probabilities in Multistate Models";
 author <- personList(
   as.person("Artur Ara{\\'u}jo"),
   as.person("Lu{\\'\\i}s Meira-Machado"),
@@ -16,14 +16,14 @@ url <- paste("https://CRAN.R-project.org/package=", PKG, sep="");
 
 citEntry(
 	entry       = "Manual",
-	title       = title,
+	title       = paste(PKG, ": ", title, sep=""),
 	author      = author,
 	year        = year,
 	note        = vers,
 	url         = url,
 	textVersion = paste(
     "Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas (", year, "). ",
-    title, ". ", vers, " URL ", url, sep=""
+    PKG, ": ", title, ". ", vers, " URL ", url, sep=""
   )
 );
 
