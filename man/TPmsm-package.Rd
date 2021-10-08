@@ -59,9 +59,9 @@ Karl A. T., Eubank R., Milovanovic J., Reiser M., Young D. (2014) Using RngStrea
 
 Laurie J. A., Moertel C. G., Fleming T. R., Wieand H. S., Leigh J. E., Rubin J., McCormack G. W., Gerstner J. B., Krook J. E., Malliard J. (1989) Surgical adjuvant therapy of large-bowel carcinoma: An evaluation of levamisole and the combination of levamisole and fluorouracil: The North Central Cancer Treatment Group and the Mayo Clinic. \emph{Journal of Clinical Oncology} \bold{7}(10), 1447--1456. \doi{10.1200/JCO.1989.7.10.1447}
 
-L'Ecuyer, P. (1999) Good parameters and implementations for combined multiple recursive random number generators. \emph{Operations Research} \bold{47}(1), 159–-164. \url{https://www.jstor.org/stable/222902}
+L'Ecuyer, P. (1999) Good parameters and implementations for combined multiple recursive random number generators. \emph{Operations Research} \bold{47}(1), 159–-164. \doi{10.1287/opre.47.1.159}
 
-L’Ecuyer P., Simard R., Chen E. J., Kelton W. D. (2002) An object-oriented random-number package with many long streams and substreams. \emph{Operations Research} \bold{50}(6), 1073–-1075. \url{https://www.jstor.org/stable/3088626}
+L’Ecuyer P., Simard R., Chen E. J., Kelton W. D. (2002) An object-oriented random-number package with many long streams and substreams. \emph{Operations Research} \bold{50}(6), 1073–-1075. \doi{10.1287/opre.50.6.1073.358}
 
 Lin D. Y. (1994) Cox regression analysis of multivariate failure time data: the marginal approach. \emph{Statistics in Medicine} \bold{13}(21), 2233--2247. \doi{10.1002/sim.4780132105}
 
