@@ -62,9 +62,7 @@
 \begin{document}
 
 A version of this manuscript has been published online in the
-\emph{Journal of Statistical Software}, on Dec.\ 2014, with DOI \linebreak[3]
-\texttt{10.18637/jss.v062.i04},
-see \url{https://www.jstatsoft.org/article/view/v062i04/}.
+\emph{Journal of Statistical Software}, on Dec.\ 2014, with \doi{10.18637/jss.v062.i04}.
 
 \vspace*{-0.35cm}
 
