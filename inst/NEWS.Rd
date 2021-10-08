@@ -2,6 +2,13 @@
 
 \title{NEWS file for the TPmsm package}
 
+\section{Changes in version 1.2.4}{
+	\itemize{
+		\item{Implemented vignette compression.}
+		\item{Improved bibliographic references.}
+	}
+}
+
 \section{Changes in version 1.2.3}{
 	\itemize{
 		\item{Added package vignette.}
