@@ -20,13 +20,13 @@ Allignol A., Schumacher M., Beyersmann J. (2011) Empirical Transition Matrix of 
 Amorim A. P., de Uña-Álvarez J., Meira Machado L. F. (2011) Presmoothing the transition probabilities in the illness-death model. *Statistics and Probability Letters* **81**(7), 797--806. [doi:10.1016/j.spl.2011.02.017](https://doi.org/10.1016/j.spl.2011.02.017)
 
 Araújo A, Meira-Machado L, Roca-Pardiñas J (2014) TPmsm: Estimation of the Transition Probabilities in
-3-State Models. *Journal of Statistical Software*, **62**(4), 1-29. [doi:10.18637/jss.v062.i04](https://doi.org/10.18637/jss.v062.i04)
+3-State Models. *Journal of Statistical Software*, **62**(4), 1--29. [doi:10.18637/jss.v062.i04](https://doi.org/10.18637/jss.v062.i04)
 
 Crowley J., Hu M. (1977) Covariance analysis of heart transplant survival data. *Journal of the American Statistical Association* **72**(357), 27--36. [doi:10.2307/2286902](https://doi.org/10.2307/2286902)
 
 Davison, A. C., Hinkley, D. V. (1997) *Bootstrap Methods and their Application* Chapter 5, Cambridge University Press.
 
-Devroye L. (1986) *Non-Uniform Random Variate Generation* New-York: Springer-Verlag.
+Devroye L. (1986) *Non-Uniform Random Variate Generation* New York: Springer-Verlag.
 
 Johnson M. E. (1987) *Multivariate Statistical Simulation* John Wiley and Sons.
 
@@ -46,19 +46,19 @@ Lu J., Bhattacharya G. (1990) Some new constructions of bivariate weibull models
 
 Meira Machado L. F., de Uña-Álvarez J., Cadarso-Suárez C. (2006) Nonparametric estimation of transition probabilities in a non-Markov illness-death model. *Lifetime Data Anal* **12**(3), 325--344. [doi:10.1007/s10985-006-9009-x](https://doi.org/10.1007/s10985-006-9009-x)
 
-Meira-Machado L., de Uña-Álvarez J., Datta S. Conditional Transition Probabilities in a non-Markov Illness-death Model. Discussion Papers in Statistics and Operations Research n 11/03, 2011. Department of Statistics and Operations Research, University of Vigo (ISSN: 1888-5756, Deposito Legal VG 1402 - 2007). <https://depc05.webs.uvigo.es/reports/12_05.pdf>
+Meira-Machado L., de Uña-Álvarez J., Datta S. (2011) Conditional Transition Probabilities in a non-Markov Illness-death Model. Discussion Papers in Statistics and Operations Research n 11/03. Department of Statistics and Operations Research, University of Vigo (ISSN: 1888-5756, Deposito Legal VG 1402-2007). <https://depc05.webs.uvigo.es/reports/12_05.pdf>
 
 Meira-Machado L., Roca-Pardiñas J. (2011) p3state.msm: Analyzing Survival Data from an Illness-Death Model. *Journal of Statistical Software* **38**(3), 1--18. [doi:10.18637/jss.v038.i03](https://doi.org/10.18637/jss.v038.i03)
 
 Meira-Machado L., Roca-Pardiñas J., Van Keilegom I., Cadarso-Suárez C. (2013) Bandwidth Selection for the Estimation of Transition Probabilities in the Location-Scale Progressive Three-State Model. *Computational Statistics* **28**(5), 2185--2210. [doi:10.1007/s00180-013-0402-0](https://doi.org/10.1007/s00180-013-0402-0)
 
-Meira-Machado L., Roca-Pardiñas J., Van Keilegom I. Cadarso-Suárez C. Estimation of transition probabilities in a non-Markov model with successive survival times. Discussion paper 2010. <https://sites.uclouvain.be/IAP-Stat-Phase-V-VI/ISBApub/dp2010/DP1053.pdf>
+Meira-Machado L., Roca-Pardiñas J., Van Keilegom I. (2010) Cadarso-Suárez C. Estimation of transition probabilities in a non-Markov model with successive survival times. <https://sites.uclouvain.be/IAP-Stat-Phase-V-VI/ISBApub/dp2010/DP1053.pdf>
 
 Moertel C. G., Fleming T. R., MacDonald J. S., Haller D. G., Laurie J. A., Goodman P.J., Ungerleider J.S., Emerson W.A., Tormey D.C., Glick J.H., Veeder M.H., Maillard J.A. (1990) Levamisole and fluorouracil for adjuvant therapy of resected colon carcinoma. *New England Journal of Medicine* **322**(6), 352--358. [doi:10.1056/NEJM199002083220602](https://doi.org/10.1056/NEJM199002083220602)
 
 Moertel C. G., Fleming T. R., MacDonald J. S., Haller D. G., Laurie J. A., Tangen C. M., Ungerleider J. S., Emerson W. A., Tormey D. C., Glick J. H., Veeder M. H., Maillard J. A. (1995) Fluorouracil plus Levamisole as an effective adjuvant therapy after resection of stage II colon carcinoma: a final report. *Annals of Internal Medicine* **122**(5), 321--326. [doi:10.7326/0003-4819-122-5-199503010-00001](https://doi.org/10.7326/0003-4819-122-5-199503010-00001)
 
-Moreira A., de Uña-Álvarez J., Meira-Machado L. Presmoothing the Aalen-Johansen estimator of transition probabilities. Discussion Papers in Statistics and Operation Research n 11/03, 2011. Department of Statistics and Operations Research, University of Vigo (ISSN: 1888-5756, Deposito Legal VG 1402 - 2007). <https://depc05.webs.uvigo.es/reports/11_03.pdf>
+Moreira A., de Uña-Álvarez J., Meira-Machado L. (2011) Presmoothing the Aalen-Johansen estimator of transition probabilities. Discussion Papers in Statistics and Operation Research n 11/03. Department of Statistics and Operations Research, University of Vigo (ISSN: 1888-5756, Deposito Legal VG 1402-2007). <https://depc05.webs.uvigo.es/reports/11_03.pdf>
 
 Van Keilegom I., de Uña-Álvarez J., Meira-Machado L. (2011) Nonparametric location-scale models for successive survival times under dependent censoring. *Journal of Statistical Planning and Inference* **141**(3), 1118--1131. [doi:10.1016/j.jspi.2010.09.010](https://doi.org/10.1016/j.jspi.2010.09.010)
 

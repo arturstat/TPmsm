@@ -70,7 +70,7 @@ An object of class \sQuote{TPmsm}. There are methods for \code{contour}, \code{i
 
 \references{
 Araújo A, Meira-Machado L, Roca-Pardiñas J (2014) TPmsm: Estimation of the Transition Probabilities in
-3-State Models. \emph{Journal of Statistical Software}, \bold{62}(4), 1-29. \doi{10.18637/jss.v062.i04}
+3-State Models. \emph{Journal of Statistical Software}, \bold{62}(4), 1--29. \doi{10.18637/jss.v062.i04}
 
 Meira Machado L. F., de Uña-Álvarez J., Cadarso-Suárez C. (2006) Nonparametric estimation of transition probabilities in a non-Markov illness-death model. \emph{Lifetime Data Anal} \bold{12}(3), 325--344. \doi{10.1007/s10985-006-9009-x}
 

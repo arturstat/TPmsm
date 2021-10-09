@@ -43,9 +43,9 @@ Where \eqn{0 < \delta \le 1}{0 < \delta \le 1} and each marginal distribution ha
 
 \references{
 Araújo A, Meira-Machado L, Roca-Pardiñas J (2014) TPmsm: Estimation of the Transition Probabilities in
-3-State Models. \emph{Journal of Statistical Software}, \bold{62}(4), 1-29. \doi{10.18637/jss.v062.i04}
+3-State Models. \emph{Journal of Statistical Software}, \bold{62}(4), 1--29. \doi{10.18637/jss.v062.i04}
 
-Devroye L. (1986) \emph{Non-Uniform Random Variate Generation} New-York: Springer-Verlag.
+Devroye L. (1986) \emph{Non-Uniform Random Variate Generation} New York: Springer-Verlag.
 
 Johnson N., Kotz S. (1972) \emph{Distributions in statistics: continuous multivariate distributions} John Wiley and Sons.
 

@@ -36,7 +36,7 @@ Invisibly returns an object of class \sQuote{TPmsmSeed}.
 
 \references{
 Araújo A, Meira-Machado L, Roca-Pardiñas J (2014) TPmsm: Estimation of the Transition Probabilities in
-3-State Models. \emph{Journal of Statistical Software}, \bold{62}(4), 1-29. \doi{10.18637/jss.v062.i04}
+3-State Models. \emph{Journal of Statistical Software}, \bold{62}(4), 1--29. \doi{10.18637/jss.v062.i04}
 
 Karl A. T., Eubank R., Milovanovic J., Reiser M., Young D. (2014) Using RngStreams for parallel random number generation in C++ and R. \emph{Computational Statistics} \bold{29}(5), 1301--1320. \doi{10.1007/s00180-014-0492-3}
 
