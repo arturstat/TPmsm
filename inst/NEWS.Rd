@@ -5,6 +5,7 @@
 \section{Changes in version 1.2.5}{
 	\itemize{
     \item{Removed LICENSE file from build.}
+    \item{Fixed references.}
 	}
 }
 
