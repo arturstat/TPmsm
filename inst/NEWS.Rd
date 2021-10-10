@@ -6,6 +6,7 @@
 	\itemize{
     \item{Removed LICENSE file from build.}
     \item{Fixed references.}
+    \item{Fixed compile error under development versions of R.}
 	}
 }
 
