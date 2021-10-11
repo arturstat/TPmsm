@@ -2,6 +2,12 @@
 
 \title{NEWS file for the TPmsm package}
 
+\section{Changes in version 1.2.6}{
+  \itemize{
+    \item{Fixed several compiler warnings.}
+  }
+}
+
 \section{Changes in version 1.2.5}{
   \itemize{
     \item{Removed LICENSE file from build.}
