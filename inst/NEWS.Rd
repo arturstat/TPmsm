@@ -4,7 +4,7 @@
 
 \section{Changes in version 1.2.6}{
   \itemize{
-    \item{Fixed several compiler warnings.}
+    \item{Fixed compiler warnings.}
   }
 }
 
