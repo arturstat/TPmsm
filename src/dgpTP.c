@@ -36,7 +36,7 @@ static void weibullt(
 	doubleCP t1,
 	doubleCP t2)
 {
-	register int i;
+	register short i;
 	double u[5], v;
 	for (i = 0; i < 5; i++) {
 		u[i] = RngStream_RandU01(g); // uniform(0,1)
