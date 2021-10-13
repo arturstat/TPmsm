@@ -10,12 +10,12 @@ Description:
 		S(t) = P(T>t)
 
 Parameters:
-	len[in]			pointer to length of T, E, index and SV.
-	T[in]			pointer to T first element.
-	E[in]			pointer to E first element.
-	index[in]		pointer to index first element.
-	end[in]			pointer to last index of T.
-	SV[out]			pointer to survival probabilities vector.
+	len[in]           pointer to length of T, E, index and SV.
+	T[in]             pointer to T first element.
+	E[in]             pointer to E first element.
+	index[in]         pointer to index first element.
+	end[in]           pointer to last index of T.
+	SV[out]           pointer to survival probabilities vector.
 
 Return value:
 	This function doesn't return a value.

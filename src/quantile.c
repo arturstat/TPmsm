@@ -12,11 +12,11 @@ Description:
 	Computes quantiles of a given vector.
 
 Parameters:
-	len[in]       pointer to length of V.
-	V[inout]      pointer to V first element.
-	n[in]         pointer to length of P and Q.
-	P[in]         pointer to P first element.
-	Q[out]        pointer to Q first element.
+	len[in]           pointer to length of V.
+	V[inout]          pointer to V first element.
+	n[in]             pointer to length of P and Q.
+	P[in]             pointer to P first element.
+	Q[out]            pointer to Q first element.
 
 Return value:
 	This function doesn't return a value.

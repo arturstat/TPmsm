@@ -28,18 +28,18 @@ Description:
 		p23(s,t) = P(T<=t|Z<=s,T>s) = P(Z<=s,s<T<=t)/{P(Z<=s)-P(T<=s)}
 
 Parameters:
-	len[in]			pointer to length of T1, M0, S and M.
-	T1[in]			pointer to T1 first element.
-	M0[in]			pointer to M0 first element.
-	S[in]			pointer to S first element.
-	M[in]			pointer to M first element.
-	index0[in]		pointer to index0 first element.
-	index1[in]		pointer to index1 first element.
-	nt[in]			pointer to length of UT and number of rows of P.
-	UT[in]			pointer to unique times vector.
-	nb[in]			pointer to number of rows of P.
-	P[out]			pointer to a (nb)x(nt)x4 probability array.
-	b[in]			pointer to row index.
+	len[in]           pointer to length of T1, M0, S and M.
+	T1[in]            pointer to T1 first element.
+	M0[in]            pointer to M0 first element.
+	S[in]             pointer to S first element.
+	M[in]             pointer to M first element.
+	index0[in]        pointer to index0 first element.
+	index1[in]        pointer to index1 first element.
+	nt[in]            pointer to length of UT and number of rows of P.
+	UT[in]            pointer to unique times vector.
+	nb[in]            pointer to number of rows of P.
+	P[out]            pointer to a (nb)x(nt)x4 probability array.
+	b[in]             pointer to row index.
 
 Return value:
 	This function doesn't return a value.
@@ -140,18 +140,18 @@ Description:
 		p23(s,t) = P(T<=t|Z<=s,T>s) = P(Z<=s,s<T<=t)/P(Z<=s,T>s)
 
 Parameters:
-	len[in]			pointer to length of T1, M0, S and M.
-	T1[in]			pointer to T1 first element.
-	M0[in]			pointer to M0 first element.
-	S[in]			pointer to S first element.
-	M[in]			pointer to M first element.
-	index0[in]		pointer to index0 first element.
-	index1[in]		pointer to index1 first element.
-	nt[in]			pointer to length of UT and number of rows of P.
-	UT[in]			pointer to unique times vector.
-	nb[in]			pointer to number of rows of P.
-	P[out]			pointer to a (nb)x(nt)x4 probability array.
-	b[in]			pointer to row index.
+	len[in]           pointer to length of T1, M0, S and M.
+	T1[in]            pointer to T1 first element.
+	M0[in]            pointer to M0 first element.
+	S[in]             pointer to S first element.
+	M[in]             pointer to M first element.
+	index0[in]        pointer to index0 first element.
+	index1[in]        pointer to index1 first element.
+	nt[in]            pointer to length of UT and number of rows of P.
+	UT[in]            pointer to unique times vector.
+	nb[in]            pointer to number of rows of P.
+	P[out]            pointer to a (nb)x(nt)x4 probability array.
+	b[in]             pointer to row index.
 
 Return value:
 	This function doesn't return a value.
@@ -260,10 +260,10 @@ Description:
 		on the presmoothed Kaplan-Meier weights estimator.
 
 Parameters:
-	object			an object of class 'KMPW2'.
-	UT			unique times vector.
-	nboot			number of bootstrap samples.
-	methodest		an integer indicating the desired method.
+	object            an object of class 'KMPW2'.
+	UT                unique times vector.
+	nboot             number of bootstrap samples.
+	methodest         an integer indicating the desired method.
 
 Return value:
 	Returns a list where the first element is a

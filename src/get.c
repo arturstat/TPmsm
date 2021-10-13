@@ -11,13 +11,13 @@ Description:
 		In this case a step function is considered.
 
 Parameters:
-	X[in]			pointer to X first element.
-	Y[in]			pointer to Y first element.
-	index[in]		pointer to index first element.
-	len[in]			pointer to length of X, Y and index.
-	i[inout]		pointer to index to start the search.
-	a[in]			pointer to abscissa value to read the ordinate at.
-	o[out]			pointer to ordinate value.
+	X[in]             pointer to X first element.
+	Y[in]             pointer to Y first element.
+	index[in]         pointer to index first element.
+	len[in]           pointer to length of X, Y and index.
+	i[inout]          pointer to index to start the search.
+	a[in]             pointer to abscissa value to read the ordinate at.
+	o[out]            pointer to ordinate value.
 
 Return value:
 	This function doesn't return a value.
@@ -59,12 +59,12 @@ Description:
 	Computes first e index of a vector T where T[index[e]] > t.
 
 Parameters:
-	T[in]			pointer to T first element.
-	index[in]		pointer to index first element.
-	t[in]			pointer to t value.
-	len[in]			pointer to length of T and index.
-	i[in]			pointer to index to start the search.
-	e[out]			pointer to index found.
+	T[in]             pointer to T first element.
+	index[in]         pointer to index first element.
+	t[in]             pointer to t value.
+	len[in]           pointer to length of T and index.
+	i[in]             pointer to index to start the search.
+	e[out]            pointer to index found.
 
 Return value:
 	This function doesn't return a value.
@@ -107,12 +107,12 @@ Description:
 	The search is done backwards.
 
 Parameters:
-	T[in]			pointer to T first element.
-	index[in]		pointer to index first element.
-	t[in]			pointer to t value.
-	len[in]			pointer to length of T and index.
-	i[in]			pointer to index to start the search.
-	e[out]			pointer to index found.
+	T[in]             pointer to T first element.
+	index[in]         pointer to index first element.
+	t[in]             pointer to t value.
+	len[in]           pointer to length of T and index.
+	i[in]             pointer to index to start the search.
+	e[out]            pointer to index found.
 
 Return value:
 	This function doesn't return a value.

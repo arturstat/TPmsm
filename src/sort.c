@@ -82,10 +82,10 @@ Description:
 	Sorts vector 'x'.
 
 Parameters:
-	x[inout]		pointer to x first element.
-	n[in]			length of x.
-	nalast[in]		if TRUE NA values are put last.
-	decreasing[in]		if TRUE sorts by descending order.
+	x[inout]          pointer to x first element.
+	n[in]             length of x.
+	nalast[in]        if TRUE NA values are put last.
+	decreasing[in]    if TRUE sorts by descending order.
 
 Return value:
 	This function doesn't return a value.
@@ -111,10 +111,10 @@ Description:
 	Sorts vector 'x'.
 
 Parameters:
-	x[inout]		pointer to x first element.
-	n[in]			length of x.
-	nalast[in]		if TRUE NA values are put last.
-	decreasing[in]		if TRUE sorts by descending order.
+	x[inout]          pointer to x first element.
+	n[in]             length of x.
+	nalast[in]        if TRUE NA values are put last.
+	decreasing[in]    if TRUE sorts by descending order.
 
 Return value:
 	This function doesn't return a value.
@@ -158,11 +158,11 @@ Description:
 	Sorts vector 'x' with vector 'indx' alongside.
 
 Parameters:
-	x[inout]		pointer to x first element.
-	indx[inout]		pointer to indx first element.
-	n[in]			length of x and indx.
-	nalast[in]		if TRUE NA values are put last.
-	decreasing[in]		if TRUE sorts by descending order.
+	x[inout]          pointer to x first element.
+	indx[inout]       pointer to indx first element.
+	n[in]             length of x and indx.
+	nalast[in]        if TRUE NA values are put last.
+	decreasing[in]    if TRUE sorts by descending order.
 
 Return value:
 	This function doesn't return a value.
@@ -192,11 +192,11 @@ Description:
 	Sorts vector 'x' with vector 'indx' alongside.
 
 Parameters:
-	x[inout]		pointer to x first element.
-	indx[inout]		pointer to indx first element.
-	n[in]			length of x and indx.
-	nalast[in]		if TRUE NA values are put last.
-	decreasing[in]		if TRUE sorts by descending order.
+	x[inout]          pointer to x first element.
+	indx[inout]       pointer to indx first element.
+	n[in]             length of x and indx.
+	nalast[in]        if TRUE NA values are put last.
+	decreasing[in]    if TRUE sorts by descending order.
 
 Return value:
 	This function doesn't return a value.
@@ -227,11 +227,11 @@ Description:
 	Sorts vector 'x' with vector 'indx' alongside.
 
 Parameters:
-	x[inout]		pointer to x first element.
-	indx[inout]		pointer to indx first element.
-	n[in]			length of x and indx.
-	nalast[in]		if TRUE NA values are put last.
-	decreasing[in]		if TRUE sorts by descending order.
+	x[inout]          pointer to x first element.
+	indx[inout]       pointer to indx first element.
+	n[in]             length of x and indx.
+	nalast[in]        if TRUE NA values are put last.
+	decreasing[in]    if TRUE sorts by descending order.
 
 Return value:
 	This function doesn't return a value.
@@ -262,11 +262,11 @@ Description:
 		by increasing order.
 
 Parameters:
-	time[in]		pointer to time first element.
-	index[out]		pointer to index first element.
-	len[in]			length of time and index.
-	nalast[in]		if TRUE NA values are put last.
-	decreasing[in]		if TRUE sorts by descending order.
+	time[in]          pointer to time first element.
+	index[out]        pointer to index first element.
+	len[in]           length of time and index.
+	nalast[in]        if TRUE NA values are put last.
+	decreasing[in]    if TRUE sorts by descending order.
 
 Return value:
 	This function doesn't return a value.
@@ -300,13 +300,13 @@ Description:
 		event observations are sorted by decreasing order.
 
 Parameters:
-	time[in]		pointer to time first element.
-	event[in]		pointer to event first element.
-	index[inout]		pointer to index first element.
-	len[in]			length of time, event and index.
-	nalast[in]		if TRUE NA values are put last.
-	decreasing0[in]		if TRUE sorts time by descending order.
-	decreasing1[in]		if TRUE sorts event by descending order.
+	time[in]          pointer to time first element.
+	event[in]         pointer to event first element.
+	index[inout]      pointer to index first element.
+	len[in]           length of time, event and index.
+	nalast[in]        if TRUE NA values are put last.
+	decreasing0[in]   if TRUE sorts time by descending order.
+	decreasing1[in]   if TRUE sorts event by descending order.
 
 Return value:
 	This function doesn't return a value.
@@ -354,13 +354,13 @@ Description:
 		event observations are sorted by decreasing order.
 
 Parameters:
-	time[in]		pointer to time first element.
-	event[in]		pointer to event first element.
-	index[inout]		pointer to index first element.
-	len[in]			length of time, event and index.
-	nalast[in]		if TRUE NA values are put last.
-	decreasing0[in]		if TRUE sorts time by descending order.
-	decreasing1[in]		if TRUE sorts event by descending order.
+	time[in]          pointer to time first element.
+	event[in]         pointer to event first element.
+	index[inout]      pointer to index first element.
+	len[in]           length of time, event and index.
+	nalast[in]        if TRUE NA values are put last.
+	decreasing0[in]   if TRUE sorts time by descending order.
+	decreasing1[in]   if TRUE sorts event by descending order.
 
 Return value:
 	This function doesn't return a value.
