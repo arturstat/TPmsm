@@ -22,11 +22,11 @@ SEXP BtoTPCmsm(
 	h = VECTOR_ELT(lst, 1);
 	register size_t i, j, k;
 	register size_t y;
-	const R_len_t nt = GET_LENGTH(UT), nx = GET_LENGTH(UX);
+	Cint nt = GET_LENGTH(UT), nx = GET_LENGTH(UX);
 	const size_t ntx = nt*nx;
 	SEXP aest;
 	PROTECT( aest = alloc3DArray(REALSXP, nt, nx, 5) );
-	R_len_t n = 2, nb = INTEGER( GET_DIM(a4d) )[0];
+	int n = 2, nb = INTEGER( GET_DIM(a4d) )[0];
 	double P[n], Q[n];
 	P[0] = ( 1-*REAL(conflevel) )/2;
 	P[1] = ( 1+*REAL(conflevel) )/2;

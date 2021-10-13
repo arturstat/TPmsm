@@ -1,5 +1,4 @@
 
-#include <stdint.h>
 #include <stdlib.h>
 #include <Rdefines.h>
 #include "defines.h"
@@ -17,10 +16,10 @@ SEXP toTPCmsm(
 	SEXP a4d, h;
 	a4d = VECTOR_ELT(lst, 0);
 	h = VECTOR_ELT(lst, 1);
-	register int i, j, k;
-	register int64_t y;
-	const int nt = GET_LENGTH(UT), nx = GET_LENGTH(UX);
-	const int64_t ntx = nt*nx;
+	register size_t i, j, k;
+	register size_t y;
+	Cint nt = GET_LENGTH(UT), nx = GET_LENGTH(UX);
+	const size_t ntx = nt*nx;
 	SEXP aest;
 	PROTECT( aest = alloc3DArray(REALSXP, nt, nx, 5) );
 	#ifdef _OPENMP

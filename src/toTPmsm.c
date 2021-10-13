@@ -1,5 +1,4 @@
 
-#include <stdint.h>
 #include <stdlib.h>
 #include <Rdefines.h>
 #include "defines.h"
@@ -9,9 +8,9 @@
 	SEXP a3d, h; \
 	a3d = VECTOR_ELT(lst, 0); \
 	h = VECTOR_ELT(lst, 1); \
-	register int i, j; \
-	register int64_t k; \
-	const int nt = GET_LENGTH(UT); \
+	register size_t i, j; \
+	register size_t k; \
+	Cint nt = GET_LENGTH(UT); \
 	SEXP mest; \
 	PROTECT( mest = allocMatrix(REALSXP, nt, 5) ); \
 

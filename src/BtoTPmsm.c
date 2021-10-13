@@ -11,10 +11,10 @@
 	h = VECTOR_ELT(lst, 1); \
 	register size_t i, j; \
 	register size_t k; \
-	const R_len_t nt = GET_LENGTH(UT); \
+	Cint nt = GET_LENGTH(UT); \
 	SEXP mest; \
 	PROTECT( mest = allocMatrix(REALSXP, nt, 5) ); \
-	R_len_t n = 2, nb = INTEGER( GET_DIM(a3d) )[0]; \
+	int  n = 2, nb = INTEGER( GET_DIM(a3d) )[0]; \
 	double P[n], Q[n]; \
 	P[0] = ( 1-*REAL(conflevel) )/2; \
 	P[1] = ( 1+*REAL(conflevel) )/2; \
