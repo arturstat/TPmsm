@@ -35,27 +35,27 @@ Description:
 		p22(s,t|X) = P(Z<=t,T>t|Z<=s,T>s|X) = P(Z<=s,T>t|X)/P(Z<=s,T>s|X)
 
 Parameters:
-	len[in]			pointer to length of T1, E1, S, E, X and SW->ptr.
-	T1[in]			pointer to T1 first element.
-	E1[in]			pointer to E1 first element.
-	S[in]			pointer to S first element.
-	E[in]			pointer to E first element.
-	X[in]			pointer to X first element.
-	SW[in]			pointer to a weights stype structure.
-	index0[in]		pointer to index0 first element.
-	index1[in]		pointer to index1 first element.
-	nt[in]			pointer to length of UT and number of columns of P.
-	UT[in]			pointer to unique times vector.
-	nx[in]			pointer to length of UX and number of faces of P.
-	UX[in]			pointer to unique covariate vector.
-	h[in]			pointer to bandwidth parameter.
-	kfunc[in]		pointer to kernel density function.
-	wfunc[in]		pointer to weights function.
-	nb[in]			pointer to number of rows of P.
-	P[out]			pointer to a (nb)x(nt)x(nx)x4 probability array.
-	b[in]			pointer to row index.
-	t[in]			pointer to thread number.
-	WORK[out]		pointer to array of transLINW structures.
+	len[in]           pointer to length of T1, E1, S, E, X and SW->ptr.
+	T1[in]            pointer to T1 first element.
+	E1[in]            pointer to E1 first element.
+	S[in]             pointer to S first element.
+	E[in]             pointer to E first element.
+	X[in]             pointer to X first element.
+	SW[in]            pointer to a weights stype structure.
+	index0[in]        pointer to index0 first element.
+	index1[in]        pointer to index1 first element.
+	nt[in]            pointer to length of UT and number of columns of P.
+	UT[in]            pointer to unique times vector.
+	nx[in]            pointer to length of UX and number of faces of P.
+	UX[in]            pointer to unique covariate vector.
+	h[in]             pointer to bandwidth parameter.
+	kfunc[in]         pointer to kernel density function.
+	wfunc[in]         pointer to weights function.
+	nb[in]            pointer to number of rows of P.
+	P[out]            pointer to a (nb)x(nt)x(nx)x4 probability array.
+	b[in]             pointer to row index.
+	t[in]             pointer to thread number.
+	WORK[out]         pointer to array of transLINW structures.
 
 Return value:
 	This function doesn't return a value.
@@ -214,13 +214,13 @@ Description:
 		on the LIN estimator.
 
 Parameters:
-	object			an object of class 'LIN2'.
-	UT			unique times vector.
-	UX			unique covariate vector.
-	h			bandwidth parameter.
-	window			a string indicating the desired window or kernel.
-	methodweights		a string indicating the desired weights method.
-	nboot			number of bootstrap samples.
+	object            an object of class 'LIN2'.
+	UT                unique times vector.
+	UX                unique covariate vector.
+	h                 bandwidth parameter.
+	window            a string indicating the desired window or kernel.
+	methodweights     a string indicating the desired weights method.
+	nboot             number of bootstrap samples.
 
 Return value:
 	Returns a list where the first element is a

@@ -71,27 +71,27 @@ Description:
 		by cross-validation.
 
 Parameters:
-	T1[in]			pointer to T1 first element.
-	E1[in]			pointer to E1 first element.
-	S[in]			pointer to S first element.
-	E[in]			pointer to E first element.
-	T2[in]			pointer to T2 first element.
-	index[in]		pointer to index first element.
-	len[in]			pointer to length of index,
-					which must be lower or equal
-					than the length of vectors
-					T1, E1, S, E and T2.
-	h[in]			pointer to h first element.
-	nh[in]			pointer to number of bandwidth
-					values to test by cross-validation.
-	ncv[in]			pointer to number of
-					cross-validation samples.
-	cvfull[in]		pointer to integer indicating if full
-					cross-validation is to be done.
-	kfunc[in]		pointer to kernel density function.
-	H[out]			pointer to H first element.
-	t[in]			pointer to thread number.
-	WORK[out]		pointer to array of transLSW structures.
+	T1[in]            pointer to T1 first element.
+	E1[in]            pointer to E1 first element.
+	S[in]             pointer to S first element.
+	E[in]             pointer to E first element.
+	T2[in]            pointer to T2 first element.
+	index[in]         pointer to index first element.
+	len[in]           pointer to length of index,
+                      which must be lower or equal
+                      than the length of vectors
+                      T1, E1, S, E and T2.
+	h[in]             pointer to h first element.
+	nh[in]            pointer to number of bandwidth
+                      values to test by cross-validation.
+	ncv[in]           pointer to number of
+                      cross-validation samples.
+	cvfull[in]        pointer to integer indicating if full
+                      cross-validation is to be done.
+	kfunc[in]         pointer to kernel density function.
+	H[out]            pointer to H first element.
+	t[in]             pointer to thread number.
+	WORK[out]         pointer to array of transLSW structures.
 
 Return value:
 	This function doesn't return a value.
@@ -282,21 +282,21 @@ Description:
 		labeled MX and SX.
 
 Parameters:
-	T1[in]			pointer to T1 first element.
-	SW[in]			pointer to a weights stype structure.
-	T2[in]			pointer to T2 first element.
-	E[in]			pointer to E first element.
-	index[in]		pointer to index first element.
-	len[in]			pointer to length of index,
-					which must be lower or equal
-					than the length of vectors
-					T1, SW->ptr, T2, E, MX and SX.
-	H[in]			pointer to H first element.
-	kfunc[in]		pointer to kernel density function.
-	MX[out]			pointer to MX vector.
-	SX[out]			pointer to SX vector.
-	t[in]			pointer to thread number.
-	WORK[out]		pointer to array of transLSW structures.
+	T1[in]            pointer to T1 first element.
+	SW[in]            pointer to a weights stype structure.
+	T2[in]            pointer to T2 first element.
+	E[in]             pointer to E first element.
+	index[in]         pointer to index first element.
+	len[in]           pointer to length of index,
+                      which must be lower or equal
+                      than the length of vectors
+                      T1, SW->ptr, T2, E, MX and SX.
+	H[in]             pointer to H first element.
+	kfunc[in]         pointer to kernel density function.
+	MX[out]           pointer to MX vector.
+	SX[out]           pointer to SX vector.
+	t[in]             pointer to thread number.
+	WORK[out]         pointer to array of transLSW structures.
 
 Return value:
 	This function doesn't return a value.
@@ -400,22 +400,22 @@ Description:
 		p22(s,t) = P(Z<=t,T>t|Z<=s,T>s) = P(Z<=s,T>t)/P(Z<=s,T>s)
 
 Parameters:
-	len[in]			pointer to length of T1, E1, T2 and E.
-	T1[in]			pointer to T1 first element.
-	E1[in]			pointer to E1 first element.
-	T2[in]			pointer to T2 first element.
-	E[in]			pointer to E first element.
-	index0[in]		pointer to index0 first element.
-	index1[inout]		pointer to index1 first element.
-	nt[in]			pointer to length of UT and number of rows of P.
-	UT[in]			pointer to unique times vector.
-	nb[in]			pointer to number of rows of P.
-	P[out]			pointer to a (nb)x(nt)x4 probability array.
-	b[in]			pointer to row index.
-	kfunc[in]		pointer to kernel density function.
-	H[in]			pointer to H first element.
-	t[in]			pointer to thread number.
-	WORK[out]		pointer to array of transLSW structures.
+	len[in]           pointer to length of T1, E1, T2 and E.
+	T1[in]            pointer to T1 first element.
+	E1[in]            pointer to E1 first element.
+	T2[in]            pointer to T2 first element.
+	E[in]             pointer to E first element.
+	index0[in]        pointer to index0 first element.
+	index1[inout]     pointer to index1 first element.
+	nt[in]            pointer to length of UT and number of rows of P.
+	UT[in]            pointer to unique times vector.
+	nb[in]            pointer to number of rows of P.
+	P[out]            pointer to a (nb)x(nt)x4 probability array.
+	b[in]             pointer to row index.
+	kfunc[in]         pointer to kernel density function.
+	H[in]             pointer to H first element.
+	t[in]             pointer to thread number.
+	WORK[out]         pointer to array of transLSW structures.
 
 Return value:
 	This function doesn't return a value.
@@ -548,17 +548,17 @@ Description:
 		based on the Location-Scale estimator.
 
 Parameters:
-	object			an object of class 'LS'.
-	UT			unique times vector.
-	h			a vector of bandwidth values with length two.
-	nh			number of bandwidth values
-					to test by cross-validation.
-	ncv			number of cross-validation samples.
-	window			a string indicating the desired window or kernel.
-	nboot			number of bootstrap samples.
-	bootcv			if TRUE cross-validation is done for each bootstrap sample.
-	cvfull			if TRUE cross-validation is done for both location and
-					scale functions.
+	object            an object of class 'LS'.
+	UT                unique times vector.
+	h                 a vector of bandwidth values with length two.
+	nh                number of bandwidth values
+                      to test by cross-validation.
+	ncv               number of cross-validation samples.
+	window            a string indicating the desired window or kernel.
+	nboot             number of bootstrap samples.
+	bootcv            if TRUE cross-validation is done for each bootstrap sample.
+	cvfull            if TRUE cross-validation is done for both location and
+                      scale functions.
 
 Return value:
 	Returns a list where the first element is a

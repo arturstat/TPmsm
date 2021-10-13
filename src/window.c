@@ -17,10 +17,10 @@ Description:
 	Initialize kernel density with weights over bandwith value.
 
 Parameters:
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
 
 Return value:
 	This function doesn't return a value.
@@ -72,12 +72,12 @@ Description:
 	Computes weights based on the gaussian kernel.
 
 Parameters:
-	X[in]			pointer to covariate vector.
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	x[in]			pointer to covariate value to compute the weights at.
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
+	X[in]             pointer to covariate vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	x[in]             pointer to covariate value to compute the weights at.
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
 
 Return value:
 	This function doesn't return a value.
@@ -112,12 +112,12 @@ Description:
 	Computes weights based on the epanechnikov kernel.
 
 Parameters:
-	X[in]			pointer to covariate vector.
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	x[in]			pointer to covariate value to compute the weights at.
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
+	X[in]             pointer to covariate vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	x[in]             pointer to covariate value to compute the weights at.
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
 
 Return value:
 	This function doesn't return a value.
@@ -155,12 +155,12 @@ Description:
 	Computes weights based on the tricube kernel.
 
 Parameters:
-	X[in]			pointer to covariate vector.
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	x[in]			pointer to covariate value to compute the weights at.
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
+	X[in]             pointer to covariate vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	x[in]             pointer to covariate value to compute the weights at.
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
 
 Return value:
 	This function doesn't return a value.
@@ -198,12 +198,12 @@ Description:
 	Computes weights based on the boxcar kernel.
 
 Parameters:
-	X[in]			pointer to covariate vector.
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	x[in]			pointer to covariate value to compute the weights at.
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
+	X[in]             pointer to covariate vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	x[in]             pointer to covariate value to compute the weights at.
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
 
 Return value:
 	This function doesn't return a value.
@@ -238,12 +238,12 @@ Description:
 	Computes weights based on the triangular kernel.
 
 Parameters:
-	X[in]			pointer to covariate vector.
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	x[in]			pointer to covariate value to compute the weights at.
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
+	X[in]             pointer to covariate vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	x[in]             pointer to covariate value to compute the weights at.
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
 
 Return value:
 	This function doesn't return a value.
@@ -281,12 +281,12 @@ Description:
 	Computes weights based on the biweight kernel.
 
 Parameters:
-	X[in]			pointer to covariate vector.
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	x[in]			pointer to covariate value to compute the weights at.
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
+	X[in]             pointer to covariate vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	x[in]             pointer to covariate value to compute the weights at.
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
 
 Return value:
 	This function doesn't return a value.
@@ -324,12 +324,12 @@ Description:
 	Computes weights based on the triweight kernel.
 
 Parameters:
-	X[in]			pointer to covariate vector.
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	x[in]			pointer to covariate value to compute the weights at.
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
+	X[in]             pointer to covariate vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	x[in]             pointer to covariate value to compute the weights at.
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
 
 Return value:
 	This function doesn't return a value.
@@ -367,12 +367,12 @@ Description:
 	Computes weights based on the cosine kernel.
 
 Parameters:
-	X[in]			pointer to covariate vector.
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	x[in]			pointer to covariate value to compute the weights at.
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
+	X[in]             pointer to covariate vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	x[in]             pointer to covariate value to compute the weights at.
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
 
 Return value:
 	This function doesn't return a value.
@@ -410,7 +410,7 @@ Description:
 	Returns a pointer to a window or kernel function based on the inputed string.
 
 Parameters:
-	window			a string indicating the desired window or kernel method.
+	window            a string indicating the desired window or kernel method.
 
 Return value:
 	Returns a pointer to a window or kernel function.
@@ -436,13 +436,13 @@ Description:
 	Computes the Nadaraya-Watson weights.
 
 Parameters:
-	X[in]			pointer to covariate vector.
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	x[in]			pointer to covariate value to compute the weights at.
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
-	kfunc[in] 		pointer to kernel density function.
+	X[in]             pointer to covariate vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	x[in]             pointer to covariate value to compute the weights at.
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
+	kfunc[in]         pointer to kernel density function.
 
 Return value:
 	This function doesn't return a value.
@@ -486,13 +486,13 @@ Description:
 	Computes local linear weights based on a kernel density.
 
 Parameters:
-	X[in]			pointer to covariate vector.
-	SW[in]			pointer to a weights stype structure.
-	index[i]		pointer to index vector
-	x[in]			pointer to covariate value to compute the weights at.
-	h[in]			pointer to bandwith value.
-	K[out]			pointer to kernel density vector.
-	kfunc[in] 		pointer to kernel density function.
+	X[in]             pointer to covariate vector.
+	SW[in]            pointer to a weights stype structure.
+	index[i]          pointer to index vector
+	x[in]             pointer to covariate value to compute the weights at.
+	h[in]             pointer to bandwith value.
+	K[out]            pointer to kernel density vector.
+	kfunc[in]         pointer to kernel density function.
 
 Return value:
 	This function doesn't return a value.

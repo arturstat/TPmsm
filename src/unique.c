@@ -9,11 +9,11 @@ Description:
 	Computes unique index vector.
 
 Parameters:
-	T[in]			pointer to T first element.
-	index[in]		pointer to index first element.
-	len[in]			pointer to length of index.
-	unique[out]		pointer to unique vector.
-	u[out]			pointer to length of unique vector.
+	T[in]             pointer to T first element.
+	index[in]         pointer to index first element.
+	len[in]           pointer to length of index.
+	unique[out]       pointer to unique vector.
+	u[out]            pointer to length of unique vector.
 
 Return value:
 	This function doesn't return a value.

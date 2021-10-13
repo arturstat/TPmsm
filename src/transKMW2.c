@@ -17,18 +17,18 @@ Description:
 		p23(s,t) = P(T<=t|Z<=s,T>s) = P(Z<=s,s<T<=t)/{P(Z<=s)-P(T<=s)}
 
 Parameters:
-	len[in]			pointer to length of T1, E1, S and E.
-	T1[in]			pointer to T1 first element.
-	E1[in]			pointer to E1 first element.
-	S[in]			pointer to S first element.
-	E[in]			pointer to E first element.
-	index0[in]		pointer to index0 first element.
-	index1[in]		pointer to index1 first element.
-	nt[in]			pointer to length of UT and number of rows of P.
-	UT[in]			pointer to unique times vector.
-	nb[in]			pointer to number of rows of P.
-	P[out]			pointer to a (nb)x(nt)x4 probability array.
-	b[in]			pointer to row index.
+	len[in]           pointer to length of T1, E1, S and E.
+	T1[in]            pointer to T1 first element.
+	E1[in]            pointer to E1 first element.
+	S[in]             pointer to S first element.
+	E[in]             pointer to E first element.
+	index0[in]        pointer to index0 first element.
+	index1[in]        pointer to index1 first element.
+	nt[in]            pointer to length of UT and number of rows of P.
+	UT[in]            pointer to unique times vector.
+	nb[in]            pointer to number of rows of P.
+	P[out]            pointer to a (nb)x(nt)x4 probability array.
+	b[in]             pointer to row index.
 
 Return value:
 	This function doesn't return a value.
@@ -129,18 +129,18 @@ Description:
 		p23(s,t) = P(T<=t|Z<=s,T>s) = P(Z<=s,s<T<=t)/P(Z<=s,T>s)
 
 Parameters:
-	len[in]			pointer to length of T1, E1, S and E.
-	T1[in]			pointer to T1 first element.
-	E1[in]			pointer to E1 first element.
-	S[in]			pointer to S first element.
-	E[in]			pointer to E first element.
-	index0[in]		pointer to index0 first element.
-	index1[in]		pointer to index1 first element.
-	nt[in]			pointer to length of UT and number of rows of P.
-	UT[in]			pointer to unique times vector.
-	nb[in]			pointer to number of rows of P.
-	P[out]			pointer to a (nb)x(nt)x4 probability array.
-	b[in]			pointer to row index.
+	len[in]           pointer to length of T1, E1, S and E.
+	T1[in]            pointer to T1 first element.
+	E1[in]            pointer to E1 first element.
+	S[in]             pointer to S first element.
+	E[in]             pointer to E first element.
+	index0[in]        pointer to index0 first element.
+	index1[in]        pointer to index1 first element.
+	nt[in]            pointer to length of UT and number of rows of P.
+	UT[in]            pointer to unique times vector.
+	nb[in]            pointer to number of rows of P.
+	P[out]            pointer to a (nb)x(nt)x4 probability array.
+	b[in]             pointer to row index.
 
 Return value:
 	This function doesn't return a value.
