@@ -5,6 +5,7 @@
 \section{Changes in version 1.2.6}{
   \itemize{
     \item{Fixed compiler warnings.}
+    \item{Improved bibliographic references.}
   }
 }
 
