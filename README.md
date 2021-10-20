@@ -9,7 +9,7 @@ If you want to use the release version of the **TPmsm** package, you can install
 ```r
 install.packages(pkgs="TPmsm");
 ```
-If you want to use the development version of the **TPmsm** package, you can install the package from GitHub via the [**remotes** package](https://remotes.r-lib.org):
+If you want to use the development version of the **TPmsm** package, you can install the package from GitHub via the [**remotes**](https://remotes.r-lib.org) package:
 ```r
 remotes::install_github(
   repo="arturstat/TPmsm",
