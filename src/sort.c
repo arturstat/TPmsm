@@ -22,7 +22,8 @@ static int rcmp(
 	double y,
 	Rboolean nalast)
 {
-	int nax = ISNAN(x), nay = ISNAN(y);
+  int nax = R_IsNA(x) || R_IsNaN(x);
+  int nay = R_IsNA(y) || R_IsNaN(y);
 	if (nax && nay)	return 0;
 	if (nax)		return nalast?1:-1;
 	if (nay)		return nalast?-1:1;

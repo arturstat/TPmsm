@@ -115,7 +115,7 @@ static void transAJI(
 	for (; i < *nt; i++) { // needed for bootstrap
 		for (j = 0; j < 4; j++) P[*b+*nb*(i+*nt*j)] = P[*b+*nb*(i-1+*nt*j)];
 	}
-	for (i--; i >= 0; i--) if ( !ISNAN(P[*b+*nb*(i+*nt)]) ) break; // loop backwards while ISNAN
+	for (i--; i >= 0; i--) if ( !R_IsNaN(P[*b+*nb*(i+*nt)]) ) break; // loop backwards while NaN
 	for (i++, x = s[0]; i < *nt; i++) {
 		getIndexI(T1, index0, &UT[i], len, &x, &e[0]); // determine last index
 		x = e[0]; // save index for next search

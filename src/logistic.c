@@ -1,5 +1,6 @@
 
 #include <stdlib.h>
+#include <R_ext/Arith.h>
 #include <R_ext/Error.h>
 #include <R_ext/Lapack.h>
 #include <Rmath.h>
@@ -191,7 +192,7 @@ void predict_logit(
 		}
 		predict(len, subset, n, X, WORK->B, P); // compute predicted values
 		deviance(len, subset, Y, P, &dev[1]); // compute deviance
-		if (isnan(dev[1]) || info) { // if isnan(dev[1]) the algorithm isn't converging
+		if (R_IsNaN(dev[1]) || info) { // if dev[1] is NaN the algorithm isn't converging
 			for (i = 0; i < *len; i++) P[subset[i]] = Y[subset[i]]; // in that case make the predicted values equal to the response values
 			break;
 		}

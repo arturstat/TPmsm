@@ -105,8 +105,7 @@ static void transIPCW3I(
 	#pragma omp parallel if(*b < 1) num_threads(global_num_threads) private(z)
 	#endif
 	{
-		register int i, j;
-		register int64_t k;
+		register int64_t i, j, k;
 		int tid = *t;
 		int64_t k0;
 		double sum[4], p[2];
@@ -121,7 +120,9 @@ static void transIPCW3I(
 		for (j = 0; j < *nx; j++) {
 			wfunc(X, SW, index0, &UX[j], h, K, kfunc); // compute weights
 			wikmsurv(len, T1, E1, K, index0, &e[1], SV); // compute conditional survival probabilities
-			for (z = 0, sum[0] = 1; z < e[0]; z++) if (E1[index0[z]] && SV[index0[z]]) sum[0] -= K[index0[z]]/SV[index0[z]]; // compute sum
+			for (z = 0, sum[0] = 1; z < e[0]; z++) {
+			  if (E1[index0[z]] && SV[index0[z]] != 0) sum[0] -= K[index0[z]]/SV[index0[z]]; // compute sum
+			}
 			for (i = 0, k0 = *b+nbt*j, k = k0, sum[1] = 0; z < e[1]; z++) {
 				p[0] = (sum[0]-sum[1])/sum[0];
 				p[1] = sum[1]/sum[0];
@@ -132,7 +133,7 @@ static void transIPCW3I(
 					i++;
 					k += *nb;
 				}
-				if (E1[index0[z]] && SV[index0[z]]) sum[1] += K[index0[z]]/SV[index0[z]]; // compute sum
+				if (E1[index0[z]] && SV[index0[z]] != 0) sum[1] += K[index0[z]]/SV[index0[z]]; // compute sum
 			}
 			p[0] = (sum[0]-sum[1])/sum[0];
 			p[1] = sum[1]/sum[0];
@@ -143,7 +144,9 @@ static void transIPCW3I(
 				k += *nb;
 			}
 			wikmsurv(len, S, E, K, index1, &e[3], SV); // compute conditional survival probabilities
-			for (z = 0, sum[1] = 0; z < e[2]; z++) if (E[index1[z]] && SV[index1[z]]) sum[1] += K[index1[z]]/SV[index1[z]]; // compute sum
+			for (z = 0, sum[1] = 0; z < e[2]; z++) {
+			  if (E[index1[z]] && SV[index1[z]] != 0) sum[1] += K[index1[z]]/SV[index1[z]]; // compute sum
+			}
 			for (i = 0, k = k0, sum[2] = 0, sum[3] = 0; z < e[3]; z++) {
 				p[0] = sum[3]/sum[0];
 				p[1] = 1-sum[2]/(1-sum[0]-sum[1]);
@@ -160,7 +163,7 @@ static void transIPCW3I(
 					i++;
 					k += *nb;
 				}
-				if (E[index1[z]] && SV[index1[z]]) {
+				if (E[index1[z]] && SV[index1[z]] != 0) {
 					if (T1[index1[z]] <= UT[0]) sum[2] += K[index1[z]]/SV[index1[z]]; // compute sum
 					else sum[3] += K[index1[z]]/SV[index1[z]]; // compute sum
 				}
@@ -265,8 +268,7 @@ static void transIPCW4I(
 	#pragma omp parallel if(*b < 1) num_threads(global_num_threads) private(y)
 	#endif
 	{
-		register int i, j, z;
-		register int64_t k;
+		register int64_t i, j, k, z;
 		int tid = *t;
 		int64_t k0;
 		double sum;
@@ -282,7 +284,7 @@ static void transIPCW4I(
 			wfunc(X, SW, index0, &UX[j], h, K, kfunc); // compute weights
 			wikmsurv(len, T1, E1, K, index0, len, SV); // compute conditional survival probabilities
 			z = *len-1;
-			do {z--;} while (!SV[index0[z]] && z >= e[0]);
+			do {z--;} while (SV[index0[z]] == 0 && z >= e[0]);
 			for (sum = 0; z >= e[1]; z--) sum += K[index0[z]]*E1[index0[z]]/SV[index0[z]]; // compute sum
 			for (i = *nt-1, k0 = *b+nbt*j, k = k0+nbt-*nb; z >= e[0]; z--) {
 				while (T1[index0[z]] <= UT[i]) {
@@ -303,14 +305,14 @@ static void transIPCW4I(
 			wikmsurv(len, S, E, K, index1, len, SV); // compute conditional survival probabilities
 			for (z = e[2], y = 0; z < e[3]; z++) {
 				while (S[index1[z]] > UT[y]) y++;
-				if (E[index1[z]] && SV[index1[z]]) {
+				if (E[index1[z]] && SV[index1[z]] != 0) {
 					sum = K[index1[z]]/SV[index1[z]];
 					if (T1[index1[z]] <= UT[0]) for (k = k0+nbtx*3, i = k+*nb*y; k < i; k += *nb) P[k] += sum; // compute sum
 					else for (i = 0, k = k0+nbtx; i < y; i++) P[k+*nb*i] += (T1[index1[z]] <= UT[i])*sum; // compute sum
 				}
 			}
 			for (;z < *len; z++) {
-				if (E[index1[z]] && SV[index1[z]]) {
+				if (E[index1[z]] && SV[index1[z]] != 0) {
 					sum = K[index1[z]]/SV[index1[z]];
 					if (T1[index1[z]] <= UT[0]) for (k = k0+nbtx*3, i = k+nbt; k < i; k += *nb) P[k] += sum; // compute sum
 					else for (i = 0, k = k0+nbtx; i < *nt; i++) P[k+*nb*i] += (T1[index1[z]] <= UT[i])*sum; // compute sum

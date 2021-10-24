@@ -33,7 +33,7 @@
 		if (S[index1[y]] > UT[i]) { \
 			savePAJ \
 		} \
-		if (T1[index1[y]] < S[index1[y]] && M1[index1[y]]) { \
+		if (T1[index1[y]] < S[index1[y]] && M1[index1[y]] != 0) { \
 			for (j = y+1, z = 1; j < *len; j++) z += (T1[index1[j]] < S[index1[y]]); \
 			WORK[*len+y] = 1-M1[index1[y]]/z; \
 			p[2] *= WORK[*len+y]; \
@@ -116,7 +116,7 @@ static void transPAJI(
 	for (; i < *nt; i++) { // needed for bootstrap
 		for (j = 0; j < 4; j++) P[*b+*nb*(i+*nt*j)] = P[*b+*nb*(i-1+*nt*j)];
 	}
-	for (i--; i >= 0; i--) if ( !ISNAN(P[*b+*nb*(i+*nt)]) ) break; // loop backwards while ISNAN
+	for (i--; i >= 0; i--) if ( !R_IsNaN(P[*b+*nb*(i+*nt)]) ) break; // loop backwards while NaN
 	for (i++, x = s[0]; i < *nt; i++) {
 		getIndexI(T1, index0, &UT[i], len, &x, &e[0]); // determine last index
 		x = e[0]; // save index for next search
