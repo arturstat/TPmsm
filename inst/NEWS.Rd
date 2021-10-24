@@ -33,7 +33,7 @@
 
 \section{Changes in version 1.2.2}{
   \itemize{
-    \item{Fixed compiler warning in "RngStream.c" source file.}
+    \item{Fixed compile warning in "RngStream.c" source file.}
     \item{Temporarily disabled OpenMP with Clang compiler in
     "transLS.c" source file.}
   }
