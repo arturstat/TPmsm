@@ -89,14 +89,14 @@ logitW *logitW_Create(
 {
 	logitW *WORK = (logitW*)malloc( sizeof(logitW) ); // allocate memory block;
 	if (WORK == NULL) error("logitW_Create: No more memory\n");
-	WORK->n = *n;
+	WORK->n = (unsigned int)*n;
 	WORK->IPIV = (int*)malloc( WORK->n*sizeof(int) ); // allocate memory block
 	if (WORK->IPIV == NULL) error("logitW_Create: No more memory\n");
 	WORK->B = (double*)malloc( WORK->n*sizeof(double) ); // allocate memory block
 	if (WORK->B == NULL) error("logitW_Create: No more memory\n");
 	WORK->U = (double*)malloc( WORK->n*sizeof(double) ); // allocate memory block
 	if (WORK->U == NULL) error("logitW_Create: No more memory\n");
-	WORK->lwork = (*n)*(*n);
+	WORK->lwork = WORK->n*WORK->n;
 	WORK->F = (double*)malloc( WORK->lwork*sizeof(double) ); // allocate memory block
 	if (WORK->F == NULL) error("logitW_Create: No more memory\n");
 	WORK->W = (double*)malloc( WORK->lwork*sizeof(double) ); // allocate memory block

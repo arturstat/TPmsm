@@ -179,19 +179,19 @@ SEXP TransPROBAJ(
 	PROTECT( P = alloc3DArray(REALSXP, *INTEGER(nboot), nt, 4) );
 	PROTECT( list = NEW_LIST(2) );
 	if (*INTEGER(nboot) > 1) nth = global_num_threads;
-	int **index0 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **index0 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (index0 == NULL) error("TransPROBAJ: No more memory\n");
-	int **index1 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **index1 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (index1 == NULL) error("TransPROBAJ: No more memory\n");
-	double **WORK0 = (double**)malloc( nth*sizeof(double*) ); // allocate memory block
+	double **WORK0 = (double**)malloc( (unsigned int)nth*sizeof(double*) ); // allocate memory block
 	if (WORK0 == NULL) error("TransPROBAJ: No more memory\n");
-	int **WORK1 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **WORK1 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (WORK1 == NULL) error("TransPROBAJ: No more memory\n");
 	for (t = 0; t < nth; t++) { // allocate per thread memory
-		if ( ( index0[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBAJ: No more memory\n");
-		if ( ( index1[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBAJ: No more memory\n");
-		if ( ( WORK0[t] = (double*)malloc( len*2*sizeof(double) ) ) == NULL ) error("TransPROBAJ: No more memory\n");
-		if ( ( WORK1[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBAJ: No more memory\n");
+		if ( ( index0[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBAJ: No more memory\n");
+		if ( ( index1[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBAJ: No more memory\n");
+		if ( ( WORK0[t] = (double*)malloc( (unsigned int)len*2*sizeof(double) ) ) == NULL ) error("TransPROBAJ: No more memory\n");
+		if ( ( WORK1[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBAJ: No more memory\n");
 	}
 	#ifdef _OPENMP
 	#pragma omp parallel num_threads(nth) private(t)

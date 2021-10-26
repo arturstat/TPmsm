@@ -395,24 +395,24 @@ SEXP TransPROBIPCW2(
 			func = transIPCW3I;
 	}
 	int b, t, nth = 1;
-	transIPCWW *WORK = (transIPCWW*)malloc( global_num_threads*sizeof(transIPCWW) ); // allocate memory block
+	transIPCWW *WORK = (transIPCWW*)malloc( (unsigned int)global_num_threads*sizeof(transIPCWW) ); // allocate memory block
 	if (WORK == NULL) error("TransPROBIPCW2: No more memory\n");
 	for (t = 0; t < global_num_threads; t++) { // allocate per thread memory
-		if ( ( WORK[t].K = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBIPCW2: No more memory\n");
-		if ( ( WORK[t].SV = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBIPCW2: No more memory\n");
+		if ( ( WORK[t].K = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBIPCW2: No more memory\n");
+		if ( ( WORK[t].SV = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBIPCW2: No more memory\n");
 	}
 	if (*INTEGER(nboot) > 1) nth = global_num_threads;
-	int **index0 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **index0 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (index0 == NULL) error("TransPROBIPCW2: No more memory\n");
-	int **index1 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **index1 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (index1 == NULL) error("TransPROBIPCW2: No more memory\n");
 	for (t = 0; t < nth; t++) { // allocate per thread memory
-		if ( ( index0[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBIPCW2: No more memory\n");
-		if ( ( index1[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBIPCW2: No more memory\n");
+		if ( ( index0[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBIPCW2: No more memory\n");
+		if ( ( index1[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBIPCW2: No more memory\n");
 	}
 	stype SW; // declare stype structure
 	SW.type = SINT_PTR; // type is a short int pointer
-	SW.ptr.shortinteger = (short int*)malloc( len*sizeof(short int) ); // allocate memory block
+	SW.ptr.shortinteger = (short int*)malloc( (unsigned int)len*sizeof(short int) ); // allocate memory block
 	if (SW.ptr.shortinteger == NULL) error("TransPROBIPCW2: No more memory\n");
 	SW.length = len; // hold length of array
 	for (b = 0; b < len; b++) SW.ptr.shortinteger[b] = 1; // weights should be equal to 1.0/len, however all weights equal to 1 yield an equivalent result in this case

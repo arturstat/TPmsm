@@ -320,34 +320,34 @@ SEXP TransPROBKMPW1(
 			func = transKMPW1I;
 	}
 	int b, n0 = 2, ns = 3, maxit = 30;
-	double *J = (double*)malloc( len*sizeof(double) ); // allocate memory block
+	double *J = (double*)malloc( (unsigned int)len*sizeof(double) ); // allocate memory block
 	if (J == NULL) error("TransPROBKMPW1: No more memory\n");
 	double *X0[2] = {J, REAL(T1)};
 	double *XS[3] = {J, REAL(T1), REAL(S)};
 	double epsilon = 1e-8;
 	for (b = 0; b < len; b++) J[b] = 1; // initialize J vector
 	if (*INTEGER(nboot) > 1) nth = global_num_threads;
-	int **index0 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **index0 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (index0 == NULL) error("TransPROBKMPW1: No more memory\n");
-	int **index1 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **index1 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (index1 == NULL) error("TransPROBKMPW1: No more memory\n");
-	double **M0 = (double**)malloc( nth*sizeof(double*) ); // allocate memory block
+	double **M0 = (double**)malloc( (unsigned int)nth*sizeof(double*) ); // allocate memory block
 	if (M0 == NULL) error("TransPROBKMPW1: No more memory\n");
-	double **MS = (double**)malloc( nth*sizeof(double*) ); // allocate memory block
+	double **MS = (double**)malloc( (unsigned int)nth*sizeof(double*) ); // allocate memory block
 	if (MS == NULL) error("TransPROBKMPW1: No more memory\n");
-	double **WORK0 = (double**)malloc( nth*sizeof(double*) ); // allocate memory block
+	double **WORK0 = (double**)malloc( (unsigned int)nth*sizeof(double*) ); // allocate memory block
 	if (WORK0 == NULL) error("TransPROBKMPW1: No more memory\n");
-	double **WORK1 = (double**)malloc( nth*sizeof(double*) ); // allocate memory block
+	double **WORK1 = (double**)malloc( (unsigned int)nth*sizeof(double*) ); // allocate memory block
 	if (WORK1 == NULL) error("TransPROBKMPW1: No more memory\n");
-	logitW **WORK = (logitW**)malloc( nth*sizeof(logitW*) ); // allocate memory block
+	logitW **WORK = (logitW**)malloc( (unsigned int)nth*sizeof(logitW*) ); // allocate memory block
 	if (WORK == NULL) error("TransPROBKMPW1: No more memory\n");
 	for (t = 0; t < nth; t++) { // allocate per thread memory
-		if ( ( index0[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
-		if ( ( index1[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
-		if ( ( M0[t] = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
-		if ( ( MS[t] = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
-		if ( ( WORK0[t] = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
-		if ( ( WORK1[t] = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
+		if ( ( index0[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
+		if ( ( index1[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
+		if ( ( M0[t] = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
+		if ( ( MS[t] = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
+		if ( ( WORK0[t] = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
+		if ( ( WORK1[t] = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBKMPW1: No more memory\n");
 		WORK[t] = logitW_Create(&ns);
 	}
 	#ifdef _OPENMP

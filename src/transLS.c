@@ -29,15 +29,6 @@ typedef struct {
 	double *E0B, *E1B;
 } transLSW;
 
-#define weights \
-	order_di(T1, E1, sample0, *len, FALSE, FALSE, TRUE, a, unique0); /* get permuation */ \
-	for (aux[0] = 1, i = 0; i < *len; i++) { /* loop through the sample until last index is reached */ \
-		W[sample0[i]] = (double)E1[sample0[i]]/(*len-i); /* compute needed factor */ \
-		aux[1] = 1-W[sample0[i]]; /* factor needed for the computation */ \
-		W[sample0[i]] *= aux[0]; /* compute and save weight */ \
-		aux[0] *= aux[1]; /* compute and save factor needed for next iteration */ \
-	} \
-
 #define mean \
 	order_d(T2, sample0, *len, FALSE, FALSE, a); /* get permuation */ \
 	for (i = 0; i < u0; i++) { \
@@ -586,7 +577,7 @@ SEXP TransPROBLS(
 	S = VECTOR_ELT(data, 2);
 	E = VECTOR_ELT(data, 3);
 	int len = GET_LENGTH(T1), nt = GET_LENGTH(UT), b, t, nth = 1;
-	double *T2 = (double*)malloc( len*sizeof(double) ); // allocate memory block
+	double *T2 = (double*)malloc( (unsigned int)len*sizeof(double) ); // allocate memory block
 	if (T2 == NULL) error("TransPROBLS: No more memory\n");
 	for (b = 0; b < len; b++) T2[b] = REAL(S)[b]-REAL(T1)[b];
 	Kfunc kfunc = kchar2ptr(window); // declare and get pointer to function
@@ -594,28 +585,28 @@ SEXP TransPROBLS(
 	PROTECT( P = alloc3DArray(REALSXP, *INTEGER(nboot), nt, 4) );
 	PROTECT( H = NEW_NUMERIC(2) );
 	PROTECT( list = NEW_LIST(2) );
-	transLSW *WORK = (transLSW*)malloc( global_num_threads*sizeof(transLSW) ); // allocate memory block
+	transLSW *WORK = (transLSW*)malloc( (unsigned int)global_num_threads*sizeof(transLSW) ); // allocate memory block
 	if (WORK == NULL) error("TransPROBLS: No more memory\n");
 	for (t = 0; t < global_num_threads; t++) { // allocate per thread memory
-		if ( ( WORK[t].sample0 = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBLS: No more memory\n");
-		if ( ( WORK[t].sample1 = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBLS: No more memory\n");
-		if ( ( WORK[t].unique0 = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBLS: No more memory\n");
-		if ( ( WORK[t].K = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
-		if ( ( WORK[t].MX = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
-		if ( ( WORK[t].a = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
-		if ( ( WORK[t].b = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
-		if ( ( WORK[t].c = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
-		if ( ( WORK[t].E0B = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
-		if ( ( WORK[t].E1B = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( WORK[t].sample0 = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( WORK[t].sample1 = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( WORK[t].unique0 = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( WORK[t].K = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( WORK[t].MX = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( WORK[t].a = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( WORK[t].b = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( WORK[t].c = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( WORK[t].E0B = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( WORK[t].E1B = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBLS: No more memory\n");
 	}
 	if (*INTEGER(nboot) > 1) nth = global_num_threads;
-	int **index0 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **index0 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (index0 == NULL) error("TransPROBLS: No more memory\n");
-	int **index1 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **index1 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (index1 == NULL) error("TransPROBLS: No more memory\n");
 	for (t = 0; t < nth; t++) { // allocate per thread memory
-		if ( ( index0[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBLS: No more memory\n");
-		if ( ( index1[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( index0[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBLS: No more memory\n");
+		if ( ( index1[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBLS: No more memory\n");
 	}
 	double HC[2];
 	b = 0; // b = len, put it back to 0 or a crash might occur

@@ -364,16 +364,16 @@ SEXP TransPROBIPCW1(
 			func = transIPCW1I;
 	}
 	if (*INTEGER(nboot) > 1) nth = global_num_threads;
-	int **index0 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **index0 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (index0 == NULL) error("TransPROBIPCW1: No more memory\n");
-	int **index1 = (int**)malloc( nth*sizeof(int*) ); // allocate memory block
+	int **index1 = (int**)malloc( (unsigned int)nth*sizeof(int*) ); // allocate memory block
 	if (index1 == NULL) error("TransPROBIPCW1: No more memory\n");
-	double **WORK = (double**)malloc( nth*sizeof(double*) ); // allocate memory block
+	double **WORK = (double**)malloc( (unsigned int)nth*sizeof(double*) ); // allocate memory block
 	if (WORK == NULL) error("TransPROBIPCW1: No more memory\n");
 	for (t = 0; t < nth; t++) { // allocate per thread memory
-		if ( ( index0[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBIPCW1: No more memory\n");
-		if ( ( index1[t] = (int*)malloc( len*sizeof(int) ) ) == NULL ) error("TransPROBIPCW1: No more memory\n");
-		if ( ( WORK[t] = (double*)malloc( len*sizeof(double) ) ) == NULL ) error("TransPROBIPCW1: No more memory\n");
+		if ( ( index0[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBIPCW1: No more memory\n");
+		if ( ( index1[t] = (int*)malloc( (unsigned int)len*sizeof(int) ) ) == NULL ) error("TransPROBIPCW1: No more memory\n");
+		if ( ( WORK[t] = (double*)malloc( (unsigned int)len*sizeof(double) ) ) == NULL ) error("TransPROBIPCW1: No more memory\n");
 	}
 	#ifdef _OPENMP
 	#pragma omp parallel num_threads(nth) private(t)
