@@ -123,11 +123,11 @@ static void crossValid(
 	SW.type = INT_PTR; // type is an int pointer
 	SW.ptr.integer = E1; // hold E1 pointer in ptr union
 	SW.length = *len; // hold length of array
-  #if defined(_OPENMP) && !defined(__clang__)
+	#if defined(_OPENMP) && !defined(__clang__)
 	#pragma omp parallel if( !omp_in_parallel() ) num_threads(global_num_threads) firstprivate(tid) private(x, y, i, j, iseed, u0, h1, aux, cv1, cv2, sum)
 	#endif
 	{
-    #if defined(_OPENMP) && !defined(__clang__)
+		#if defined(_OPENMP) && !defined(__clang__)
 		if (omp_get_num_threads() != 1) tid = omp_get_thread_num(); // use the correct thread number
 		#endif
 		int *sample0 = WORK[tid].sample0;
