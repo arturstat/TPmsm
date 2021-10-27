@@ -1,7 +1,7 @@
 
 typedef struct {
 	unsigned int n;
-  int *IPIV;
+	int *IPIV;
 	double *B, *U;
 	unsigned int lwork;
 	double *F, *W;
