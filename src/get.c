@@ -82,7 +82,7 @@ void getIndexI(
 	CintCP i,
 	intCP e)
 {
-	if (*i >= *len) *e = *len;
+	if (*i > *len-1) *e = *len-1; // should never happen
 	else {
 		if (*i < 0) {
 			*e = (*len-1)/2; // the midpoint
@@ -130,10 +130,10 @@ void getBackIndexI(
 	CintCP i,
 	intCP e)
 {
-	if (*i < 0) *e = -1;
+	if (*i < 0) *e = 0; // should never happen
 	else {
 		if (*i < *len) {
-			*e = (*len-1+*i)/2; // the midpoint
+			*e = *i/2; // the midpoint
 			if (T[index[*e]] < *t) *e = *i;
 		} else *e = *len-1;
 		for (; *e >= 0; (*e)--) {
