@@ -130,7 +130,7 @@ static void transPAJI(
 		getIndexI(S, index1, &UT[i], len, &y, &e[1]); // determine last index
 		y = e[1]; // save index for next search
 		for (p[1] = 0, p[2] = 1, j = e[0]-1, k = e[1]-1; j >= s[0]; j--) { // loop backwards through the sample until first index is reached
-			if (WORK[j] == 0) continue; // don't waste time doing uneeded computations
+			if (WORK[j] == 0) continue; // don't waste time doing unneeded computations
 			getBackIndexI(S, index1, &T1[index0[j]], len, &k, &z); // determine first index
 			for (;k > z; k--) p[2] *= WORK[*len+k]; // compute transition probability
 			p[1] += WORK[j]*p[2]; // compute transition probability
