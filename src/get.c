@@ -136,8 +136,8 @@ void getBackIndexI(
 			*e = *i/2; // the midpoint
 			if (T[index[*e]] < *t) *e = *i;
 		} else {
-		  *e = (*len-1)/2; // the midpoint
-		  if (T[index[*e]] < *t) *e = *len-1;
+			*e = (*len-1)/2; // the midpoint
+			if (T[index[*e]] < *t) *e = *len-1;
 		}
 		for (; *e >= 0; (*e)--) {
 			if (T[index[*e]] <= *t) break; // find index
