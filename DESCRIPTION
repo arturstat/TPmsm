@@ -2,7 +2,7 @@ Encoding: UTF-8
 Package: TPmsm
 Type: Package
 Version: 1.2.6
-Date: 2021-10-28
+Date: 2021-10-29
 Title: Estimation of Transition Probabilities in Multistate Models
 Authors@R: c(
 	person(
