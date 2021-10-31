@@ -6,23 +6,23 @@
 
 /*
 Author:
-	Artur Araujo <artur.stat@gmail.com>
+  Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Computes quantiles of a given vector.
+  Computes quantiles of a given vector.
 
 Parameters:
-	len[in]           pointer to length of V.
-	V[inout]          pointer to V first element.
-	n[in]             pointer to length of P and Q.
-	P[in]             pointer to P first element.
-	Q[out]            pointer to Q first element.
+  len[in]           pointer to length of V.
+  V[inout]          pointer to V first element.
+  n[in]             pointer to length of P and Q.
+  P[in]             pointer to P first element.
+  Q[out]            pointer to Q first element.
 
 Return value:
-	This function doesn't return a value.
+  This function doesn't return a value.
 
 Remarks:
-	Vector V is sorted inside of this function.
+  Vector V is sorted inside of this function.
 */
 
 void quantile_d(
