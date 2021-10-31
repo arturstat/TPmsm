@@ -4,18 +4,18 @@
 
 /*
 Author:
-	Artur Araujo <artur.stat@gmail.com>
+  Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Computes bootstrap index.
+  Computes bootstrap index.
 
 Parameters:
-	g[in]             pointer to RngStream_InfoState.
-	len[in]           pointer to length of index.
-	index[out]        pointer to index first element.
+  g[in]             pointer to RngStream_InfoState.
+  len[in]           pointer to length of index.
+  index[out]        pointer to index first element.
 
 Return value:
-	This function doesn't return a value.
+  This function doesn't return a value.
 */
 
 void boot_i(
@@ -32,22 +32,22 @@ void boot_i(
 
 /*
 Author:
-	Artur Araujo <artur.stat@gmail.com>
+  Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Computes bootstrap indexes.
+  Computes bootstrap indexes.
 
 Parameters:
-	g[in]             pointer to RngStream_InfoState.
-	len[in]           pointer to length of index0 and index1.
-	index0[out]       pointer to index0 first element.
-	index1[out]       pointer to index1 first element.
+  g[in]             pointer to RngStream_InfoState.
+  len[in]           pointer to length of index0 and index1.
+  index0[out]       pointer to index0 first element.
+  index1[out]       pointer to index1 first element.
 
 Return value:
-	This function doesn't return a value.
+  This function doesn't return a value.
 
 Remarks:
-	Vectors index0 and index1 must have the same length.
+  Vectors index0 and index1 must have the same length.
 */
 
 void boot_ii(
@@ -69,14 +69,14 @@ Author:
   Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Initializes index without bootstrap.
+  Initializes index without bootstrap.
 
 Parameters:
-	len[in]           pointer to length of index.
-	index[out]        pointer to index first element.
+  len[in]           pointer to length of index.
+  index[out]        pointer to index first element.
 
 Return value:
-	This function doesn't return a value.
+  This function doesn't return a value.
 */
 
 void indx_i(
@@ -90,21 +90,21 @@ void indx_i(
 
 /*
 Author:
-	Artur Araujo <artur.stat@gmail.com>
+  Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Initializes indexes without bootstrap.
+  Initializes indexes without bootstrap.
 
 Parameters:
-	len[in]           pointer to length of index0 and index1.
-	index0[out]       pointer to index0 first element.
-	index1[out]       pointer to index1 first element.
+  len[in]           pointer to length of index0 and index1.
+  index0[out]       pointer to index0 first element.
+  index1[out]       pointer to index1 first element.
 
 Return value:
-	This function doesn't return a value.
+  This function doesn't return a value.
 
 Remarks:
-	Vectors index0 and index1 must have the same length.
+  Vectors index0 and index1 must have the same length.
 */
 
 void indx_ii(
