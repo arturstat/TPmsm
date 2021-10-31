@@ -9,26 +9,26 @@
 
 /*
 Author:
-	Artur Araujo <artur.stat@gmail.com>
+  Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Computes the predicted values.
+  Computes the predicted values.
 
 Parameters:
-	len[in]           pointer to length of subset vector.
-	subset[in]        pointer to subset vector.
-	n[in]             pointer to length of arrays X and B.
-	X[in]             pointer to array of pointers.
-	B[in]             pointer to vector of parameters.
-	P[out]            pointer to predicted values vector.
+  len[in]           pointer to length of subset vector.
+  subset[in]        pointer to subset vector.
+  n[in]             pointer to length of arrays X and B.
+  X[in]             pointer to array of pointers.
+  B[in]             pointer to vector of parameters.
+  P[out]            pointer to predicted values vector.
 
 Return value:
-	This function doesn't return a value.
+  This function doesn't return a value.
 
 Remarks:
-	Vectors X and B must have the same length.
-	X must be an array of pointers to the predictor
-		variable values.
+  Vectors X and B must have the same length.
+  X must be an array of pointers to the predictor
+    variable values.
 */
 
 static void predict(
@@ -52,20 +52,20 @@ static void predict(
 
 /*
 Author:
-	Artur Araujo <artur.stat@gmail.com>
+  Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Computes the deviance of the fitted model.
+  Computes the deviance of the fitted model.
 
 Parameters:
-	len[in]           pointer to length of subset vector.
-	subset[in]        pointer to subset vector.
-	Y[in]             pointer to response values vector.
-	P[in]             pointer to predicted values vector.
-	d[out]            pointer to deviance value.
+  len[in]           pointer to length of subset vector.
+  subset[in]        pointer to subset vector.
+  Y[in]             pointer to response values vector.
+  P[in]             pointer to predicted values vector.
+  d[out]            pointer to deviance value.
 
 Return value:
-	This function doesn't return a value.
+  This function doesn't return a value.
 */
 
 static void deviance(
@@ -118,31 +118,31 @@ void logitW_Delete(
 
 /*
 Author:
-	Artur Araujo <artur.stat@gmail.com>
+  Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Computes the predicted values from the logistic regression,
-	where Y[i]~Bernoulli(P[i]) and logit(P[i])=B[0]+B[1]*X1[i]+B[2]*X2[i]+...
+  Computes the predicted values from the logistic regression,
+    where Y[i]~Bernoulli(P[i]) and logit(P[i])=B[0]+B[1]*X1[i]+B[2]*X2[i]+...
 
 Parameters:
-	len[in]           pointer to length of subset vector.
-	subset[in]        pointer to subset vector.
-	Y[in]             pointer to response values vector.
-	P[out]            pointer to predicted values vector.
-	n[in]             pointer to length of array X.
-	X[in]             pointer to array of pointers.
-	maxit[in]         pointer to maximum number of iterations.
-	epsilon[in]       pointer to convergence parameter.
-	conv[out]         pointer to conv value.
-	WORK[out]         pointer to logitW structure.
+  len[in]           pointer to length of subset vector.
+  subset[in]        pointer to subset vector.
+  Y[in]             pointer to response values vector.
+  P[out]            pointer to predicted values vector.
+  n[in]             pointer to length of array X.
+  X[in]             pointer to array of pointers.
+  maxit[in]         pointer to maximum number of iterations.
+  epsilon[in]       pointer to convergence parameter.
+  conv[out]         pointer to conv value.
+  WORK[out]         pointer to logitW structure.
 
 Return value:
-	This function doesn't return a value.
+  This function doesn't return a value.
 
 Remarks:
-	X must be an array of pointers to the predictor
-		variable vectors.
-	If *conv == 1 the algorithm converged, if *conv == 0 it didn't.
+  X must be an array of pointers to the predictor
+    variable vectors.
+  If *conv == 1 the algorithm converged, if *conv == 0 it didn't.
 */
 
 void predict_logit(
