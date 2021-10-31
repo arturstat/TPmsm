@@ -18,22 +18,22 @@
 
 /*
 Author:
-	Artur Araujo <artur.stat@gmail.com>
+  Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Computes a transition probability vector based
-		on the Kaplan-Meier weights estimator.
+  Computes a transition probability vector based
+    on the Kaplan-Meier weights estimator.
 
 Parameters:
-	object            an object of class 'KMW1' or class 'KMW2'.
-	UT                unique times vector.
-	nboot             number of bootstrap samples.
-	methodest         an integer indicating the desired method.
+  object            an object of class 'KMW1' or class 'KMW2'.
+  UT                unique times vector.
+  nboot             number of bootstrap samples.
+  methodest         an integer indicating the desired method.
 
 Return value:
-	Returns a list where the first element is a
-		(nboot)x(nt)x4 array of transition probabilities,
-		and the second element is NULL.
+  Returns a list where the first element is a
+    (nboot)x(nt)x4 array of transition probabilities,
+    and the second element is NULL.
 */
 
 SEXP TransPROBKMW(
