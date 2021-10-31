@@ -41,39 +41,39 @@
 
 /*
 Author:
-	Artur Araujo <artur.stat@gmail.com>
+  Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Computes the transition probabilities:
-		p11(s,t) = P(Z>t|Z>s) = P(Z>t)/P(Z>s)
-		p12(s,t) = P(Z<=t,T>t|Z>s) = P(s<Z<=t,T>t)/P(Z>s)
-		p13(s,t) = 1-p11(s,t)-p12(s,t)
-		p22(s,t) = P(Z<=t,T>t|Z<=s,T>s) = P(Z<=s,T>t)/P(Z<=s,T>s)
+  Computes the transition probabilities:
+    p11(s,t) = P(Z>t|Z>s) = P(Z>t)/P(Z>s)
+    p12(s,t) = P(Z<=t,T>t|Z>s) = P(s<Z<=t,T>t)/P(Z>s)
+    p13(s,t) = 1-p11(s,t)-p12(s,t)
+    p22(s,t) = P(Z<=t,T>t|Z<=s,T>s) = P(Z<=s,T>t)/P(Z<=s,T>s)
 
 Parameters:
-	len[in]           pointer to length of T1, E1, S and E.
-	T1[in]            pointer to T1 first element.
-	E1[in]            pointer to E1 first element.
-	S[in]             pointer to S first element.
-	E[in]             pointer to E first element.
-	index0[in]        pointer to index0 first element.
-	index1[in]        pointer to index1 first element.
-	nt[in]            pointer to length of UT and number of rows of P.
-	UT[in]            pointer to unique times vector.
-	nb[in]            pointer to number of rows of P.
-	P[out]            pointer to a (nb)x(nt)x4 probability array.
-	b[in]             pointer to row index.
-	WORK[out]         pointer to WORK first element
+  len[in]           pointer to length of T1, E1, S and E.
+  T1[in]            pointer to T1 first element.
+  E1[in]            pointer to E1 first element.
+  S[in]             pointer to S first element.
+  E[in]             pointer to E first element.
+  index0[in]        pointer to index0 first element.
+  index1[in]        pointer to index1 first element.
+  nt[in]            pointer to length of UT and number of rows of P.
+  UT[in]            pointer to unique times vector.
+  nb[in]            pointer to number of rows of P.
+  P[out]            pointer to a (nb)x(nt)x4 probability array.
+  b[in]             pointer to row index.
+  WORK[out]         pointer to WORK first element
 
 Return value:
-	This function doesn't return a value.
+  This function doesn't return a value.
 
 Remarks:
-	Vector index0 must indicate the permutation of vector T1
-		sorted by ascending order.
-	Vector index1 must indicate the permutation of vector S
-		sorted by ascending order.
-	Vectors T1, E1, S and E must have the same length.
+  Vector index0 must indicate the permutation of vector T1
+    sorted by ascending order.
+  Vector index1 must indicate the permutation of vector S
+    sorted by ascending order.
+  Vectors T1, E1, S and E must have the same length.
 */
 
 static void transAJI(
@@ -146,21 +146,21 @@ static void transAJI(
 
 /*
 Author:
-	Artur Araujo <artur.stat@gmail.com>
+  Artur Araujo <artur.stat@gmail.com>
 
 Description:
-	Computes a transition probability vector based
-		on the Aalen-Johansen estimator.
+  Computes a transition probability vector based
+    on the Aalen-Johansen estimator.
 
 Parameters:
-	object            an object of class 'AJ'.
-	UT                unique times vector.
-	nboot             number of bootstrap samples.
+  object            an object of class 'AJ'.
+  UT                unique times vector.
+  nboot             number of bootstrap samples.
 
 Return value:
-	Returns a list where the first element is a
-		(nboot)x(nt)x4 array of transition probabilities,
-		and the second element is NULL.
+  Returns a list where the first element is a
+    (nboot)x(nt)x4 array of transition probabilities,
+    and the second element is NULL.
 */
 
 SEXP TransPROBAJ(
