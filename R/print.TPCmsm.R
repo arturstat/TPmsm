@@ -25,6 +25,6 @@ print.TPCmsm <- function(x, ...) {
       cat("\n");
       cat( (1+x$conf.level)*50, "%\n", sep="" );
       print(lst[[i]][[3]]);
-    }
-  }
+		}
+	}
 } # print.TPCmsm
