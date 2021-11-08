@@ -22,7 +22,7 @@ estimators, functions to generate pseudo-random data for some well-known multiva
 		Package: \tab TPmsm\cr
 		Type: \tab Package\cr
 		Version: \tab 1.2.6\cr
-		Date: \tab 2021-11-01\cr
+		Date: \tab 2021-11-08\cr
 		License: \tab GPL-3\cr
 		LazyLoad: \tab yes\cr
 		LazyData: \tab yes\cr
