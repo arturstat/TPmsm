@@ -2,7 +2,7 @@ Encoding: UTF-8
 Package: TPmsm
 Type: Package
 Version: 1.2.6
-Date: 2021-11-08
+Date: 2023-01-14
 Title: Estimation of Transition Probabilities in Multistate Models
 Authors@R: c(
 	person(
@@ -27,7 +27,7 @@ Authors@R: c(
 		comment = c(ORCID = "0000-0002-8577-7665")
 	) )
 Depends: R (>= 3.1.0), graphics, grDevices, KernSmooth
-Enhances: p3state.msm, etm
+Enhances: etm
 Suggests: knitr
 VignetteBuilder: knitr
 Description: Estimation of transition probabilities for the
