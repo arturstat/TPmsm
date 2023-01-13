@@ -2,7 +2,7 @@
 
 \title{NEWS file for the TPmsm package}
 
-\section{Changes in version 1.2.6}{
+\section{Changes in version 1.2.7}{
   \itemize{
     \item{Fixed compile warnings.}
     \item{Improved bibliographic references.}
