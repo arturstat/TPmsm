@@ -6,6 +6,8 @@
   \itemize{
     \item{Fixed compile warnings.}
     \item{Improved bibliographic references.}
+    \item{Temporarily removed p3state.msm from Enhances field
+    of the DESCRIPTION file.}
   }
 }
 
