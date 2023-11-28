@@ -2,6 +2,12 @@
 
 \title{NEWS file for the TPmsm package}
 
+\section{Changes in version 1.2.8}{
+  \itemize{
+    \item{Fixed compile warnings in "RngStream.c" source file.}
+  }
+}
+
 \section{Changes in version 1.2.7}{
   \itemize{
     \item{Fixed compile warnings.}
