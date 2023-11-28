@@ -5,6 +5,7 @@
 \section{Changes in version 1.2.8}{
   \itemize{
     \item{Fixed compile warnings in "RngStream.c" source file.}
+    \item{Updated CITATION file.}
   }
 }
 
