@@ -2,9 +2,16 @@
 
 \title{NEWS file for the TPmsm package}
 
+\section{Changes in version 1.2.9}{
+  \itemize{
+    \item{Limit number of threads in "contour.TPCmsm.Rd" file
+    in order to pass CRAN pretest.}
+  }
+}
+
 \section{Changes in version 1.2.8}{
   \itemize{
-    \item{Fixed compile warnings in "RngStream.c" source file.}
+    \item{Fixed compile warnings in "RngStream.c" file.}
     \item{Updated CITATION file.}
     \item{Added p3state.msm to Enhances field of DESCRIPTION file.}
   }
@@ -43,9 +50,9 @@
 
 \section{Changes in version 1.2.2}{
   \itemize{
-    \item{Fixed compile warning in "RngStream.c" source file.}
+    \item{Fixed compile warning in "RngStream.c" file.}
     \item{Temporarily disabled OpenMP with Clang compiler in
-    "transLS.c" source file.}
+    "transLS.c" file.}
   }
 }
 
