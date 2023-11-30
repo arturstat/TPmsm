@@ -78,7 +78,7 @@ Meira-Machado L., de Uña-Álvarez J., Datta S. (2011). Conditional Transition P
 
 \examples{
 # Set the number of threads
-nth <- setThreadsTP(2)
+nth <- setThreadsTP(1)
 
 # Create survTP object
 data(colonTP)
