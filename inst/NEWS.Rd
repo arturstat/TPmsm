@@ -6,6 +6,7 @@
   \itemize{
     \item{Fixed compile warnings in "RngStream.c" source file.}
     \item{Updated CITATION file.}
+    \item{Added p3state.msm to Enhances field of DESCRIPTION file.}
   }
 }
 
@@ -14,7 +15,7 @@
     \item{Fixed compile warnings.}
     \item{Improved bibliographic references.}
     \item{Temporarily removed p3state.msm from Enhances field
-    of the DESCRIPTION file.}
+    of DESCRIPTION file.}
   }
 }
 
