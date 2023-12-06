@@ -2,10 +2,10 @@
 
 \title{NEWS file for the TPmsm package}
 
-\section{Changes in version 1.2.9}{
+\section{Changes in version 1.2.10}{
   \itemize{
-    \item{Limit number of threads in "contour.TPCmsm.Rd" file
-    in order to pass CRAN pretest.}
+    \item{Modified example in "contour.TPCmsm.Rd" file
+    in order to pass CRAN checks.}
   }
 }
 

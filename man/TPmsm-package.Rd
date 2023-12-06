@@ -21,8 +21,8 @@ estimators, functions to generate pseudo-random data for some well-known multiva
 	\tabular{ll}{
 		Package: \tab TPmsm\cr
 		Type: \tab Package\cr
-		Version: \tab 1.2.9\cr
-		Date: \tab 2023-11-30\cr
+		Version: \tab 1.2.10\cr
+		Date: \tab 2023-12-06\cr
 		License: \tab GPL-3\cr
 		LazyLoad: \tab yes\cr
 		LazyData: \tab yes\cr
