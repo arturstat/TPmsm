@@ -2,10 +2,9 @@
 
 \title{NEWS file for the TPmsm package}
 
-\section{Changes in version 1.2.10}{
+\section{Changes in version 1.2.11}{
   \itemize{
-    \item{Modified example in "contour.TPCmsm.Rd" file
-    in order to pass CRAN checks.}
+    \item{Modified examples in order to pass CRAN checks.}
   }
 }
 

@@ -77,7 +77,9 @@ Meira-Machado L., de Uña-Álvarez J., Datta S. (2011). Conditional Transition P
 }
 
 \examples{
+#ifdef unix
 if ( interactive() ) {
+#endif
   # Set the number of threads
   nth <- setThreadsTP(2)
   
@@ -96,7 +98,9 @@ if ( interactive() ) {
   
   # Restore the number of threads
   setThreadsTP(nth)
+#ifdef unix
 }
+#endif
 }
 
 \keyword{aplot}
