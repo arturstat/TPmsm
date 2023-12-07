@@ -2,7 +2,7 @@
 
 \title{NEWS file for the TPmsm package}
 
-\section{Changes in version 1.2.11}{
+\section{Changes in version 1.2.12}{
   \itemize{
     \item{Modified examples in order to pass CRAN checks.}
   }
