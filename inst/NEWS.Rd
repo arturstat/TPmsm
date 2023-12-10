@@ -2,6 +2,12 @@
 
 \title{NEWS file for the TPmsm package}
 
+\section{Changes in version 1.2.13}{
+  \itemize{
+    \item{Modified author's order to match JSS paper.}
+  }
+}
+
 \section{Changes in version 1.2.12}{
   \itemize{
     \item{Modified examples in order to pass CRAN checks.}
