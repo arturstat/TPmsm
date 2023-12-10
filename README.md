@@ -21,8 +21,8 @@ remotes::install_github(
 ```
 
 ## Authors
-Artur Araújo, Javier Roca-Pardiñas <roca@uvigo.es> \
-and Luís Meira-Machado <lmachado@math.uminho.pt> \
+Artur Araújo, Luís Meira-Machado <lmachado@math.uminho.pt> \
+and Javier Roca-Pardiñas <roca@uvigo.es> \
 Maintainer: Artur Araújo <artur.stat@gmail.com>
 
 ## Funding
