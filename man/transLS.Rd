@@ -62,7 +62,7 @@ An object of class \sQuote{TPmsm}. There are methods for \code{contour}, \code{i
 \item{conf.level}{Level of confidence used to compute the confidence band.}
 }
 
-\author{Artur Araújo, Javier Roca-Pardiñas and Luís Meira-Machado}
+\author{Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas}
 
 \references{
 Araújo A, Meira-Machado L, Roca-Pardiñas J (2014). TPmsm: Estimation of the Transition Probabilities in

@@ -46,7 +46,7 @@ An object of class \sQuote{TPmsm}. There are methods for \code{contour}, \code{i
 \item{conf.level}{Level of confidence used to compute the confidence band.}
 }
 
-\author{Artur Araújo, Javier Roca-Pardiñas and Luís Meira-Machado}
+\author{Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas}
 
 \references{
 Aalen O. O., Johansen S. (1978) An Empirical Transition Matrix for Nonhomogeneous Markov Chains Based on Censored Observations. \emph{Scandinavian Journal of Statistics} \bold{5}(3), 141--150. \url{https://www.jstor.org/stable/4615704}

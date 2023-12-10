@@ -66,7 +66,7 @@ An object of class \sQuote{TPmsm}. There are methods for \code{contour}, \code{i
 \item{conf.level}{Level of confidence used to compute the confidence band.}
 }
 
-\author{Artur Araújo, Javier Roca-Pardiñas and Luís Meira-Machado}
+\author{Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas}
 
 \references{
 Amorim A. P., de Uña-Álvarez J., Meira Machado L. F. (2011). Presmoothing the transition probabilities in the illness-death model. \emph{Statistics and Probability Letters}, \bold{81}(7), 797-806. \doi{10.1016/j.spl.2011.02.017}

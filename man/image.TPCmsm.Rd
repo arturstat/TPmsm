@@ -56,7 +56,7 @@ contour=TRUE, nlevels=20, levels=pretty(zlim, nlevels), ...)}
 No value is returned.
 }
 
-\author{Artur Araújo, Javier Roca-Pardiñas and Luís Meira-Machado}
+\author{Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas}
 
 \note{
 The device is divided by the number of transitions specified by argument \code{tr.choice}.

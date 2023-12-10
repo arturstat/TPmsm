@@ -13,18 +13,18 @@ Authors@R: c(
 		comment = c(ORCID = "0000-0003-1419-4208")
 	),
 	person(
-		given = "Javier",
-		family = "Roca-Pardinas",
-		role = "aut",
-		email = "roca@uvigo.es",
-		comment = c(ORCID = "0000-0003-3107-4515")
-	),
-	person(
 		given = "Luis",
 		family = "Meira-Machado",
 		role = "aut",
 		email = "lmachado@math.uminho.pt",
 		comment = c(ORCID = "0000-0002-8577-7665")
+	),
+	person(
+		given = "Javier",
+		family = "Roca-Pardinas",
+		role = "aut",
+		email = "roca@uvigo.es",
+		comment = c(ORCID = "0000-0003-3107-4515")
 	) )
 Depends: R (>= 3.1.0), graphics, grDevices, KernSmooth
 Enhances: etm, p3state.msm

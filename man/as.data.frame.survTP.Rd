@@ -18,7 +18,7 @@
 
 \value{A data.frame in the format specified by argument \code{package}.}
 
-\author{Artur Araújo, Javier Roca-Pardiñas and Luís Meira-Machado}
+\author{Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas}
 
 \references{
 Allignol A., Schumacher M., Beyersmann J. (2011). Empirical Transition Matrix of Multi-State Models: The etm Package. \emph{Journal of Statistical Software}, \bold{38}(4), 1-15. \doi{10.18637/jss.v038.i04}

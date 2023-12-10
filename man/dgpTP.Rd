@@ -39,7 +39,7 @@ Where \eqn{0 < \delta \le 1}{0 < \delta \le 1} and each marginal distribution ha
 
 \value{An object of class \sQuote{survTP}.}
 
-\author{Artur Araújo, Javier Roca-Pardiñas and Luís Meira-Machado}
+\author{Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas}
 
 \references{
 Araújo A, Meira-Machado L, Roca-Pardiñas J (2014). TPmsm: Estimation of the Transition Probabilities in

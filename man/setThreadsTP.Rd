@@ -34,7 +34,7 @@ OpenMP Architecture Review Board, OpenMP Application Program Interface Version 3
 \dQuote{Runtime Library Routines}, Summary of OpenMP 3.0 C/C++ Syntax, p5. \url{https://www.openmp.org/wp-content/uploads/OpenMP3.0-SummarySpec.pdf}
 }
 
-\author{Artur Araújo, Javier Roca-Pardiñas and Luís Meira-Machado}
+\author{Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas}
 
 \note{
 The given thread number is stored in a global variable. This global variable

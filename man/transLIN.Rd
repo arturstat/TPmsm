@@ -84,7 +84,7 @@ an object of class \sQuote{TPCmsm} is returned. There are methods for \code{prin
 \item{conf.level}{Level of confidence used to compute the confidence band.}
 }
 
-\author{Artur Araújo, Javier Roca-Pardiñas and Luís Meira-Machado}
+\author{Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas}
 
 \references{
 Araújo A, Meira-Machado L, Roca-Pardiñas J (2014). TPmsm: Estimation of the Transition Probabilities in

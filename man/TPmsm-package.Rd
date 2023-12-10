@@ -30,8 +30,8 @@ estimators, functions to generate pseudo-random data for some well-known multiva
 }
 
 \author{
-Artur Araújo, Javier Roca-Pardiñas \email{roca@uvigo.es}\cr
-and Luís Meira-Machado \email{lmachado@math.uminho.pt}\cr
+Artur Araújo, Luís Meira-Machado \email{lmachado@math.uminho.pt}\cr
+and Javier Roca-Pardiñas \email{roca@uvigo.es}\cr
 Maintainer: Artur Araújo \email{artur.stat@gmail.com}
 }
 

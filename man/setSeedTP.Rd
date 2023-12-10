@@ -45,7 +45,7 @@ L'Ecuyer, P. (1999). Good parameters and implementations for combined multiple r
 L’Ecuyer P., Simard R., Chen E. J., Kelton W. D. (2002). An object-oriented random-number package with many long streams and substreams. \emph{Operations Research}, \bold{50}(6), 1073–-1075. \doi{10.1287/opre.50.6.1073.358}
 }
 
-\author{Artur Araújo, Javier Roca-Pardiñas and Luís Meira-Machado}
+\author{Artur Araújo, Luís Meira-Machado and Javier Roca-Pardiñas}
 
 \note{
 Unlike function \code{\link{setPackageSeedTP}} this function doesn't
